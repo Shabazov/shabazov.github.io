@@ -3,11 +3,12 @@
 	padding: 0;
 }
 
-.background {
-	background-image: url('../img/background.jpeg') left top repeat-x;
+body {
+	background: url('../img/background.jpeg') left top repeat-x;
 }
 
 .wrapper {
+	background-color: #fff;
 	margin-left: 150px;
 	position: relative;
 	max-width: 1000px;
@@ -25,26 +26,90 @@
 /* Header */
 
 .logo {
-	margin-left: 29px;
-	margin-top: 7px;
+	margin: 9px 0px 2px 29px;
 }
 
 .contacts {
 	float: right;
 	margin-right: 33px;
-	margin-top: 7px;
+	margin-top: 9px;
 	font-size: 14px;
 	color: #2aadc2;
 }
 
 .countries {
-	display: inline;
 	float: right;
+	clear: both;
+	margin-top: 32px;
 }
 
+.countries li {
+	float: left;
+	position: relative;
+	list-style: none;
+	margin-bottom: 5px;
 }
+
 .countries a {
 	display: block;
+	margin-right: 15px;
+	font-size: 10px;
+	text-align: center;
+	color: #2aadc2;
 }
+
+.india {
+	width: 40px;
+	background: url(../img/flags/india.jpeg) center top no-repeat;
+	padding-top: 44px;
+}
+
+.nepal {
+	width: 40px;
+	background: url(../img/flags/nepal.jpeg) center top no-repeat;
+	padding-top: 44px;
+}
+
+.tibet {
+	width: 40px;
+	background: url(../img/flags/tibet.jpeg) center top no-repeat;
+	padding-top: 44px;
+}
+
+.butan {
+	width: 40px;
+	background: url(../img/flags/butan.jpeg) center top no-repeat;
+	padding-top: 44px;
+}
+
+.sriLanka {
+	width: 50px;
+	background: url(../img/flags/sri.jpeg) center top no-repeat;
+	padding-top: 44px;
+}
+
+.maldivi {
+	width: 44px;
+	background: url(../img/flags/maldivi.jpeg) center top no-repeat;
+	padding-top: 44px;
+}
+
+/* MENU */
+
+.navbar {
+	background-color: black;
+	height: 27px;
+}
+
+.menu li {
+	display: inline;
+	list-style: none;
+	background-color: black;
+	height: 27px;
+}
+
+
+
+
 
 
