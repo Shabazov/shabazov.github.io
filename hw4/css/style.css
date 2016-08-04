@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.background {
+	background-image: url('../img/background.jpeg') left top repeat-x;
+}
+
+.wrapper {
+	margin-left: 150px;
+	position: relative;
+	max-width: 1000px;
+	max-height: 985px;
+	width: 100%;
+	height: 100%;
+}
+
+.clearfix:after {
+	content:'';
+	clear: both;
+	display: block;
+}
+
+/* Header */
+
+.logo {
+	margin-left: 29px;
+	margin-top: 7px;
+}
+
+.contacts {
+	float: right;
+	margin-right: 33px;
+	margin-top: 7px;
+	font-size: 14px;
+	color: #2aadc2;
+}
+
+.countries {
+	display: inline;
+	float: right;
+}
+
+}
+.countries a {
+	display: block;
+}
+
+
