@@ -5,20 +5,24 @@
 
 body {
 	background: url('../img/background.jpeg') left top repeat-x;
+	font-family: 'Open Sans', serif;
 }
 
 .wrapper {
-	background-color: #fff;
-	margin-left: 150px;
 	position: relative;
 	max-width: 1000px;
 	max-height: 985px;
 	width: 100%;
 	height: 100%;
+	margin-left: 150px;
+	background-color: #fff;
+	-webkit-box-shadow: 0px 3px 5px 1px rgba(50, 50, 50, 1);
+	-moz-box-shadow: 0px 3px 5px 1px rgba(50, 50, 50, 1);
+	box-shadow: 0px 3px 5px 1px rgba(50, 50, 50, 1);
 }
 
 .clearfix:after {
-	content:'';
+	content:' ';
 	clear: both;
 	display: block;
 }
@@ -33,83 +37,200 @@ body {
 	float: right;
 	margin-right: 33px;
 	margin-top: 9px;
-	font-size: 14px;
+	font-size: 12px;
 	color: #2aadc2;
 }
 
 .countries {
+	margin-top: 32px;
 	float: right;
 	clear: both;
-	margin-top: 32px;
 }
 
 .countries li {
-	float: left;
 	position: relative;
-	list-style: none;
+	float: left;
 	margin-bottom: 5px;
+	list-style: none;
 }
 
 .countries a {
 	display: block;
 	margin-right: 15px;
-	font-size: 10px;
+	font-size: 8px;
 	text-align: center;
 	color: #2aadc2;
 }
 
 .india {
 	width: 40px;
-	background: url(../img/flags/india.jpeg) center top no-repeat;
 	padding-top: 44px;
+	background: url(../img/flags/india.jpeg) center top no-repeat;
 }
 
 .nepal {
 	width: 40px;
-	background: url(../img/flags/nepal.jpeg) center top no-repeat;
 	padding-top: 44px;
+	background: url(../img/flags/nepal.jpeg) center top no-repeat;
 }
 
 .tibet {
 	width: 40px;
-	background: url(../img/flags/tibet.jpeg) center top no-repeat;
 	padding-top: 44px;
+	background: url(../img/flags/tibet.jpeg) center top no-repeat;
 }
 
 .butan {
 	width: 40px;
-	background: url(../img/flags/butan.jpeg) center top no-repeat;
 	padding-top: 44px;
+	background: url(../img/flags/butan.jpeg) center top no-repeat;
 }
 
 .sriLanka {
 	width: 50px;
-	background: url(../img/flags/sri.jpeg) center top no-repeat;
 	padding-top: 44px;
+	background: url(../img/flags/sri.jpeg) center top no-repeat;
 }
 
 .maldivi {
 	width: 44px;
-	background: url(../img/flags/maldivi.jpeg) center top no-repeat;
 	padding-top: 44px;
+	background: url(../img/flags/maldivi.jpeg) center top no-repeat;
+}
+
+.beach {
+	display: inline-block;
+	margin-bottom: -4px;
 }
 
 /* MENU */
 
 .navbar {
-	background-color: black;
-	height: 27px;
+	position: relative;
+	height: 29px;
+	background-color: #323232;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 1);
+	-moz-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 1);
+	box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 1);
+	z-index: 1;
 }
 
 .menu li {
-	display: inline;
+	position: relative;
+	display: block;
+	width: 13%;
+	float: left;
+	margin-left: 7px;
+	line-height: 29px;
 	list-style: none;
-	background-color: black;
-	height: 27px;
+	text-align: center;
 }
 
+.menu a {
+	display: inline-block;
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+}
 
+.submenu {
+	display: none;
+	position: absolute;
+	width: 130px;
+	top: 29px;
+	left: 0px;
+	border-top: 1px solid #000;
+	background-color: #323232;
+	z-index: 1;
+}
 
+.submenu li {
+	float: none;
+}
 
+.submenu a {
+	display: block;
+	background-color: #323232;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 100;
+	text-decoration: none;
+	text-align: center;
+}
 
+ul.menu > li:hover > ul.submenu {
+	display: block;
+}
 
+/* COLUMNS */
+
+.column-left {
+	position: relative;
+	float: left;
+	width: 208px;
+	height: 543px;
+	border-right: 1px solid #ccc;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.column-left h2,
+.column-right h2 {
+	padding: 8px 0px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.column-left p,
+.column-right p {
+	padding: 0px 25px 10px 15px;
+	font-size: 15px;
+	font-weight: lighter;
+}
+
+.column-mid {
+	position: relative;
+	float: left;
+	width: 582px;
+	height: 543px;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.column-mid h2 {
+	padding-top: 8px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.column-mid p {
+	padding: 8px 25px;
+	font-size: 15px;
+}
+
+.column-right {
+	position: relative;
+	float: left;
+	width: 208px;
+	height: 543px;
+	border-left: 1px solid #ccc;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+/* FOOTER */
+
+.footer {
+	clear: both;
+	width: 200px;
+	margin: 9px auto;
+	padding-top: 9px;
+	color: #fff;
+	font-size: 11px;
+	font-weight: 100px;
+}
+
+.footer a {
+	color: #fff;
+	text-decoration: none;
+}
