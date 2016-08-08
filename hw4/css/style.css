@@ -126,12 +126,18 @@ body {
 	text-align: center;
 }
 
+.triangle {
+	background: url(../img/triangle.png) right center no-repeat;
+}
+
 .menu li:hover {
 	background-color: #545454;
 }
 
 .menu a {
 	display: inline-block;
+	padding-right: 8px;
+	padding-bottom: 2px;
 	color: white;
 	font-size: 14px;
 	text-decoration: none;
