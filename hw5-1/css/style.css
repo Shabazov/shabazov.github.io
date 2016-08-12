@@ -134,10 +134,18 @@ a.rightLinkColor:hover {
 	margin: 18px auto;
 }
 
+.form-color {
+	background-color: #000;
+	border-style: none;
+	border-bottom: 1px solid #333;
+}
+
 .form-wrapper::-webkit-input-placeholder {padding-left: 19px;}
 .form-wrapper::-moz-placeholder {padding-left: 19px;}
-.form-wrapper::-webkit-input-placeholder {color: #aaa;}
-.form-wrapper::-moz-placeholder {color: #aaa;}
+.form-wrapper::-webkit-input-placeholder {color: #ccc;}
+.form-wrapper::-moz-placeholder {color: #ccc;}
+.form-wrapper::-webkit-input-placeholder {font-size: 14px;}
+.form-wrapper::-moz-placeholder {font-size: 14px;}
 
 .updates {
 	margin-top: 22px;
