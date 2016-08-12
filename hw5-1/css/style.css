@@ -140,6 +140,9 @@ a.rightLinkColor:hover {
 	border-bottom: 1px solid #333;
 }
 
+.form-color:focus::-webkit-input-placeholder {color: #fff;}
+.form-color:focus::-moz-placeholder {color: #fff;}
+
 .form-wrapper::-webkit-input-placeholder {padding-left: 19px;}
 .form-wrapper::-moz-placeholder {padding-left: 19px;}
 .form-wrapper::-webkit-input-placeholder {color: #ccc;}
