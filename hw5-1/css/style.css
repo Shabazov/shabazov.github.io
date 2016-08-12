@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'Helvetica Neue Regular';
-    src: url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
-         url('../fonts/helveticaneue-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Helvetica Neue Regular';
+  src: url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+       url('../fonts/helveticaneue-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -85,7 +85,6 @@ a.rightLinkColor:hover {
 	text-align: center;
 	line-height: 60px;
 	opacity: 0.9;
-
 }
 
 .bottom-block {
@@ -137,11 +136,8 @@ a.rightLinkColor:hover {
 
 .form-wrapper::-webkit-input-placeholder {padding-left: 19px;}
 .form-wrapper::-moz-placeholder {padding-left: 19px;}
-
-.form-wrapper:hover::-webkit-input-placeholder {color: #fff;}
-.form-wrapper:focus::-moz-placeholder {color: #fff;}
-.form-wrapper:focus:-moz-placeholder {color: #fff;}
-.form-wrapper:focus:-ms-input-placeholder {color: #fff;}
+.form-wrapper::-webkit-input-placeholder {color: #aaa;}
+.form-wrapper::-moz-placeholder {color: #aaa;}
 
 .updates {
 	margin-top: 22px;
@@ -175,5 +171,3 @@ a.rightLinkColor:hover {
 	color: rgba(255, 255, 255, 0.7);
 	text-decoration: none;
 }
-
-
