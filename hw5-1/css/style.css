@@ -112,7 +112,7 @@ a.rightLinkColor:hover {
 .facebook strong {
 	font-family: Arial, sans-serif;
 	font-size: 14px;
-	
+
 }
 
 .lines {
@@ -161,7 +161,7 @@ a.rightLinkColor:hover {
 	margin: 6px 205px 0 205px;
 	border-style: none;
 	border-radius: 3px;
-	background-color: #4299d2;
+	background: linear-gradient(to top, #2e7ac4, #4faddb);
 	color: rgba(255, 255, 255, 0.7);
 }
 
