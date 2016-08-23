@@ -345,7 +345,7 @@ p.numbers {
   margin-bottom: 2px;
 }
 
-.circle-last:hover {
+.circle-last:focus {
   margin-bottom: 2px;
 }
 
@@ -358,7 +358,121 @@ p.numbers {
   letter-spacing: -0.1px;
 }
 
-.tire-list a:hover {
+.tire-list a:focus {
+  position: absolute;
+  left: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  color: #465961;
+  text-decoration: underline;
+  letter-spacing: -0.1px;
+}
+
+.wheel {
+  position: relative;
+  width: 148px;
+  height: 27px;
+  margin-top: -4px;
+  margin-left: 1px;
+  border: 1px solid #79878d;
+  border-radius: 15px;
+}
+
+.img-wheel {
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background: url(../img/sprite.png) -52px -23px no-repeat;
+}
+
+.wheel p {
+  float: left;
+  margin-left: 29px;
+  font-size: 14px;
+  color: #114165;
+  line-height: 31px;
+}
+
+.wheel-list {
+  margin-top: 3px;
+  margin-left: 29px;
+  list-style: none;
+}
+
+.wheel-list li {
+  position: relative;
+}
+
+.wheel-list a {
+  position: absolute;
+  left: 18px;
+  font-size: 13px;
+  color: #465961;
+  text-decoration: none;
+  letter-spacing: -0.1px;
+}
+
+.wheel-list a:focus {
+  position: absolute;
+  left: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  color: #465961;
+  text-decoration: underline;
+  letter-spacing: -0.1px;
+}
+
+.bolt {
+  position: relative;
+  width: 148px;
+  height: 27px;
+  margin-top: -4px;
+  margin-left: 1px;
+  border: 1px solid #79878d;
+  border-radius: 15px;
+}
+
+.img-bolt {
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 24px;
+  height: 24px;
+  background: url(../img/sprite.png) -52px -23px no-repeat;
+}
+
+.bolt p {
+  float: left;
+  margin-left: 29px;
+  font-size: 14px;
+  color: #114165;
+  line-height: 31px;
+}
+
+.bolt-list {
+  margin-top: 3px;
+  margin-left: 29px;
+  list-style: none;
+}
+
+.bolt-list li {
+  position: relative;
+}
+
+.bolt-list a {
+  position: absolute;
+  left: 18px;
+  font-size: 13px;
+  color: #465961;
+  text-decoration: none;
+  letter-spacing: -0.1px;
+}
+
+.bolt-list a:focus {
   position: absolute;
   left: 18px;
   font-size: 14px;
