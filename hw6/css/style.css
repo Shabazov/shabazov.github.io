@@ -257,7 +257,6 @@ p.numbers {
   width: 185px;
   height: 200px;
   padding-top: 3px;
-  background: #eee;
 }
 
 .catalog {
@@ -314,23 +313,58 @@ p.numbers {
   line-height: 31px;
 }
 
-.tire-list li {
+.tire-list {
+  margin-top: 3px;
   margin-left: 29px;
   list-style: none;
 }
 
+.tire-list li {
+  position: relative;
+}
+
 .circle {
   display: inline-block;
-  margin-right: 7px;
   width: 9px;
   height: 9px;
+  margin-bottom: 5px;
+  margin-left: 8px;
   background: url(../img/sprite.png) -94px -29px no-repeat;
 }
 
+.circle:hover {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-bottom: 5px;
+  margin-left: 8px;
+  background: url(../img/sprite.png) -104px -29px no-repeat;
+}
+
+.circle-last {
+  margin-bottom: 2px;
+}
+
+.circle-last:hover {
+  margin-bottom: 2px;
+}
+
 .tire-list a {
+  position: absolute;
+  left: 18px;
   font-size: 13px;
   color: #465961;
   text-decoration: none;
-  letter-spacing: 0.1px;
+  letter-spacing: -0.1px;
+}
 
+.tire-list a:hover {
+  position: absolute;
+  left: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  color: #465961;
+  text-decoration: underline;
+  letter-spacing: -0.1px;
 }
