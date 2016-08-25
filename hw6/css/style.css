@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Lucida Sans Unicode';
   src: url('../fonts/lsansuni-webfont.woff2') format('woff2'),
-         url('../fonts/lsansuni-webfont.woff') format('woff');
+       url('../fonts/lsansuni-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -262,7 +262,7 @@ p.numbers {
 
 .catalog {
   position: relative;
-  width: 181px;
+  width: 178px;
   height: 25px;
   border: 1px solid #79878d;
   border-radius: 15px;
@@ -294,7 +294,7 @@ p.numbers {
   margin-top: 12px;
   margin-left: 1px;
   border: 1px solid #79878d;
-  border-radius: 15px;
+  border-radius: 13px;
 }
 
 .img-tire {
@@ -311,7 +311,7 @@ p.numbers {
   margin-left: 29px;
   font-size: 14px;
   color: #114165;
-  line-height: 31px;
+  line-height: 27px;
 }
 
 .tire-list {
@@ -352,6 +352,7 @@ p.numbers {
 
 .tire-list a {
   position: absolute;
+  top: -1px;
   left: 18px;
   font-size: 13px;
   color: #465961;
@@ -361,6 +362,7 @@ p.numbers {
 
 .tire-list a:focus {
   position: absolute;
+  top: -1px;
   left: 18px;
   font-size: 14px;
   font-weight: 700;
@@ -382,8 +384,7 @@ p.numbers {
 
 .img-wheel {
   position: absolute;
-  top: 1px;
-  left: 4px;
+  left: 1px;
   width: 24px;
   height: 24px;
   background: url(../img/sprite.png) -52px -23px no-repeat;
@@ -394,7 +395,7 @@ p.numbers {
   margin-left: 29px;
   font-size: 14px;
   color: #114165;
-  line-height: 31px;
+  line-height: 27px;
 }
 
 .wheel-list {
@@ -409,6 +410,7 @@ p.numbers {
 
 .wheel-list a {
   position: absolute;
+  top: -2px;
   left: 18px;
   font-size: 13px;
   color: #465961;
@@ -418,6 +420,7 @@ p.numbers {
 
 .wheel-list a:focus {
   position: absolute;
+  top: -2px;
   left: 18px;
   font-size: 14px;
   font-weight: 700;
@@ -430,7 +433,7 @@ p.numbers {
 .bolt {
   position: relative;
   width: 148px;
-  height: 27px;
+  height: 26px;
   margin-top: -4px;
   margin-left: 1px;
   border: 1px solid #79878d;
@@ -439,8 +442,7 @@ p.numbers {
 
 .img-bolt {
   position: absolute;
-  top: 1px;
-  left: 4px;
+  left: 3px;
   width: 24px;
   height: 24px;
   background: url(../img/sprite.png) -52px -23px no-repeat;
@@ -451,11 +453,11 @@ p.numbers {
   margin-left: 29px;
   font-size: 14px;
   color: #114165;
-  line-height: 31px;
+  line-height: 27px;
 }
 
 .bolt-list {
-  margin-top: 3px;
+  margin-top: 1px;
   margin-left: 29px;
   list-style: none;
 }
@@ -494,6 +496,172 @@ p.numbers {
   border-radius: 2px;
 }
 
+.product {
+  display: inline-block;
+  margin-left: 21px;
+  width: 144px;
+  height: 177px;
+}
+
+.name {
+  margin: 10px 0 -10px 35px;
+  color: #206988;
+  font-size: 15px;
+}
+
+.type {
+  margin: 1px 0 -2px 15px;
+  color: #1f2528;
+  font-size: 13px;
+  letter-spacing: -0.1px;
+}
+
+.picture {
+  width: 137px;
+  height: 128px;
+  margin-bottom: -3px;
+  border: 1px solid #a4aeb1;
+  border-radius: 7px;
+  background: url(../img/goodyear.png) -1px;
+}
+
+.price {
+  display: inline;
+  margin-left: 38px;
+  font-size: 16px;
+  font-style: italic;
+  color: #114165;
+  letter-spacing: -0.9px;
+}
+
+.currency {
+  display: inline;
+  padding-left: 1px;
+  font-size: 12px;
+  font-style: italic;
+  color: #114165;
+}
+
+.product2 {
+  margin-left: 20px;
+}
+
+.name2 {
+  margin: 10px 0 -11px 45px;
+}
+
+.type2 {
+  margin: 1px 0 -2px 23px;
+}
+
+.picture2 {
+  width: 135px;
+  height: 128px;
+  margin-bottom: -2px;
+}
+
+.price2 {
+  margin-left: 33px;
+}
+
+.product3 {
+  margin-left: 18px;
+}
+
+.name3 {
+  margin: 10px 0 -10px 39px;
+}
+
+.type3 {
+  margin: 1px 0 -2px 11px;
+  letter-spacing: -0.1px;
+}
+
+.price3 {
+  margin-left: 33px;
+}
+
+.product4 {
+  margin-left: 21px;
+  padding-top: 5px;
+}
+
+.name4 {
+  margin: 10px 0 -10px 35px;
+}
+
+.type4 {
+  margin: 1px 0 -2px 14px;
+  letter-spacing: -0.1px;
+}
+
+.price4 {
+  margin-left: 38px;
+}
+
+.product5 {
+  margin-left: 19px;
+  padding-top: 5px;
+}
+
+.currency5 {
+  letter-spacing: 0.9px;
+}
+
+.product6 {
+  margin-left: 19px;
+  padding-top: 5px;
+}
+
+.product7 {
+  margin-left: 19px;
+  padding-top: 8px;
+}
+
+.name7 {
+  margin: 10px 0 -10px 36px;
+}
+
+.type7 {
+  margin: 1px 0 -2px 15px;
+  letter-spacing: -0.1px;
+}
+
+.price7 {
+  margin-left: 39px;
+}
+
+.name8 {
+  margin: 10px 0 -10px 46px;
+}
+
+.type8 {
+  margin: 1px 0 -2px 25px;
+  letter-spacing: -0.1px;
+}
+
+.price8 {
+  margin-left: 34px;
+}
+
+.product9 {
+  margin-left: 19px;
+  padding-top: 8px;
+}
+
+.name9 {
+  margin: 10px 0 -10px 40px;
+}
+
+.type9 {
+  margin: 1px 0 -2px 11px;
+  letter-spacing: -0.1px;
+}
+
+.price9 {
+  margin-left: 33px;
+}
+
 .right-column {
   float: left;
   width: 185px;
@@ -514,16 +682,154 @@ p.numbers {
 .icon2 {
   position: absolute;
   bottom: 2px;
-  left: 3px;
+  left: 1px;
   width: 22px;
   height: 26px;
   background: url(../img/sprite.png) -28px -21px no-repeat;
 }
 
 .brands p {
-  margin-left: 31px;
+  margin-left: 30px;
   font-size: 13px;
   color: #114165;
   letter-spacing: 0.5px;
-  line-height: 25px;
+  line-height: 23px;
+}
+
+.tire-right {
+  margin-top: 13px;
+  width: 135px;
+  margin-left: 16px;
+}
+
+.check-list input {
+  display: none;
+}
+
+.check-list input + label {
+  display: block;
+  margin-top: 4px;
+  margin-left: 1px;
+  color: #465961;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.check-list input + label::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 26px;
+  padding-left: 13px;
+  background: url(../img/checkbox.png) left no-repeat;
+  cursor: pointer;
+}
+
+.check-list input:checked + label::before {
+  width: 10px;
+  height: 10px;
+  margin-left: 26px;
+  padding-left: 13px;
+  background: url(../img/strelka.png) no-repeat;
+}
+
+.tire2 {
+  margin-top: 11px;
+  margin-left: 15px;
+  height: 26px;
+}
+
+.img-tire2 {
+  margin-top: -1px;
+  margin-left: -3px;
+}
+
+.check-list2 {
+  padding-top: 2px;
+}
+
+.button {
+  width: 82px;
+  height: 26px;
+  margin-top: 16px;
+  margin-left: 25px;
+  background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+  border: 1px solid #a7abae;
+  border-radius: 13px;
+  font-family: Arial;
+  font-size: 11px;
+  color: #e5e9ea;
+  letter-spacing: 0.7px;
+}
+
+.brandLogo {
+  position: absolute;
+  top: 1124px;
+  left: 260px;
+  width: 676px;
+  height: 27px;
+  clear: both;
+  margin: 38px auto;
+  background: url(../img/brandlogo.png);
+}
+
+.footer {
+  position: absolute;
+  top: 1213px;
+  left: 143px;
+  width: 908px;
+  height: 99px;
+  background-color: #213a4d;
+  border: 1px solid #242a3c;
+}
+
+.bottom-menu {
+  margin-top: 3px;
+  margin-left: 305px;
+}
+
+.bottom-menu li {
+  float: left;
+  list-style: none;
+}
+
+.bottom-menu a {
+  padding: 3px;
+  text-decoration: none;
+  font-family: Arial;
+  font-size: 12px;
+  color: #bec6c9;
+  letter-spacing: 0.03px;
+}
+
+.bottom-menu a:hover {
+  color: #52abcb;
+}
+
+.side-border {
+  height: 11px;
+  margin: 9px 10px 1px 9px;
+  border-left: 1px solid #bec6c9;
+}
+
+.side-border2 {
+  margin: 9px 9px 1px 12px;
+}
+
+.side-border3 {
+  margin: 9px 13px 1px 11px;
+}
+
+.globalVision {
+  width: 160px;
+  margin: 0 auto;
+  padding-left: 5px;
+}
+
+.globalVision a {
+  font-size: 9px;
+  color: #7f4740;
+  letter-spacing: 0.4px;
+  text-decoration: none;
 }
