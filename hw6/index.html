@@ -24,17 +24,18 @@
       <a class="registration" href="#">регистрация</a>
       <a class="forgot" href="#">забыли пароль?</a>
     </div>
-    <div class="fast-link">
+    <nav class="fast-link">
       <a href="#"><div class="home"></div></a>
       <a href="#"><div class="map"></div></a>
       <a href="#"><div class="mail"></div></a>
-    </div>
+    </nav>
   </section>
   <div class="image">
     <img src="img/zazor.png" alt="tires">
+    <a class="zazor__link" href="#"></a>
   </div>
 </header>
-<nav class="navbar">
+<div class="navbar">
   <ul class="menu">
     <li class="about"><a href="">О КОМПАНИ</a></li>
     <li class="payment"><a href="">ОПЛАТА</a></li>
@@ -48,9 +49,9 @@
     <p class="summery">на сумму:</p>
     <p class="numbers">0,00 грн.</p>
   </div>
-</nav>
-<div class="column-wrapper">
-  <div class="left-column">
+</div>
+<div class="column-wrapper clearfix">
+  <aside class="left-column">
     <div class="catalog">
       <div class="icon1"></div>
       <p>КАТАЛОГ ПРОДУКЦИИ:</p>
@@ -61,10 +62,10 @@
         <p>ШИНЫ</p>
       </div>
       <ul class="tire-list">
-        <li><div class="circle"></div><a href="#">Наименование 1</a></li>
-        <li><div class="circle"></div><a href="#">Наименование 2</a></li>
-        <li><div class="circle"></div><a href="#">Наименование 3</a></li>
-        <li><div class="circle circle-last"></div><a href="">Наименование 4</a></li>
+        <li><a href="#">Наименование 1</a></li>
+        <li><a href="#">Наименование 2</a></li>
+        <li><a href="#">Наименование 3</a></li>
+        <li><a href="#">Наименование 4</a></li>
       </ul>
     </section>
     <section class="wheels">
@@ -73,10 +74,10 @@
         <p>ДИСКИ</p>
       </div>
       <ul class="wheel-list">
-        <li><div class="circle"></div><a href="#">Наименование 1</a></li>
-        <li><div class="circle"></div><a href="#">Наименование 2</a></li>
-        <li><div class="circle"></div><a href="#">Наименование 3</a></li>
-        <li><div class="circle circle-last"></div><a href="">Наименование 4</a></li>
+        <li><a href="#">Наименование 1</a></li>
+        <li><a href="#">Наименование 2</a></li>
+        <li><a href="#">Наименование 3</a></li>
+        <li><a href="#">Наименование 4</a></li>
       </ul>
     </section>
     <section class="bolts">
@@ -85,79 +86,79 @@
         <p>БОЛТЫ</p>
       </div>
       <ul class="bolt-list">
-        <li><div class="circle"></div><a href="#">Наименование 1</a></li>
-        <li><div class="circle"></div><a href="#">Наименование 2</a></li>
-        <li><div class="circle"></div><a href="#">Наименование 3</a></li>
-        <li><div class="circle circle-last"></div><a href="">Наименование 4</a></li>
+        <li><a href="#">Наименование 1</a></li>
+        <li><a href="#">Наименование 2</a></li>
+        <li><a href="#">Наименование 3</a></li>
+        <li><a href="#">Наименование 4</a></li>
       </ul>
     </section>
-  </div>
+  </aside>
   <main class="main">
-    <div class="product">
-      <p class="name">Goodyear</p>
-      <p class="type">Ultra Grip Extreme</p>
+    <figure class="product">
+      <figcaption class="name">Goodyear</figcaption>
+      <figcaption class="type">Ultra Grip Extreme</figcaption>
       <div class="picture"></div>
-      <p class="price">90.00</p>
-      <p class="currency">грн.</p>
-    </div>
-    <div class="product product2">
-      <p class="name name2">Nokian</p>
-      <p class="type type2">Hakkapeliitta R</p>
+      <figcaption class="price">90.00</figcaption>
+      <figcaption class="currency">грн.</figcaption>
+    </figure>
+    <figure class="product product2">
+      <figcaption class="name name2">Nokian</figcaption>
+      <figcaption class="type type2">Hakkapeliitta R</figcaption>
       <div class="picture picture2"></div>
-      <p class="price price2">115.00</p>
-      <p class="currency">грн.</p>
-    </div>
-    <div class="product product3">
-      <p class="name name3">Hankook</p>
-      <p class="type type3">K 708 155/65 R14</p>
+      <figcaption class="price price2">115.00</figcaption>
+      <figcaption class="currency">грн.</figcaption>
+    </figure>
+    <figure class="product product3">
+      <figcaption class="name name3">Hankook</figcaption>
+      <figcaption class="type type3">K 708 155/65 R14</figcaption>
       <div class="picture picture3"></div>
-      <p class="price price3">393.00</p>
-      <p class="currency">грн.</p>
-    </div>
-    <div class="product product4">
-      <p class="name name4">Goodyear</p>
-      <p class="type type4">Ultra Grip Extreme</p>
+      <figcaption class="price price3">393.00</figcaption>
+      <figcaption class="currency">грн.</figcaption>
+    </figure>
+    <figure class="product product4">
+      <figcaption class="name name4">Goodyear</figcaption>
+      <figcaption class="type type4">Ultra Grip Extreme</figcaption>
       <div class="picture picture4"></div>
-      <p class="price price4">90.00</p>
-      <p class="currency">грн.</p>
-    </div>
-    <div class="product product5">
-      <p class="name name2">Nokian</p>
-      <p class="type type2">Hakkapeliitta R</p>
+      <figcaption class="price price4">90.00</figcaption>
+      <figcaption class="currency">грн.</figcaption>
+    </figure>
+    <figure class="product product5">
+      <figcaption class="name name2">Nokian</figcaption>
+      <figcaption class="type type2">Hakkapeliitta R</figcaption>
       <div class="picture picture2"></div>
-      <p class="price price2">115.00</p>
-      <p class="currency currency5">грн.</p>
-    </div>
-    <div class="product product6">
-      <p class="name name3">Hankook</p>
-      <p class="type type3">K 708 155/65 R14</p>
+      <figcaption class="price price2">115.00</figcaption>
+      <figcaption class="currency currency5">грн.</figcaption>
+    </figure>
+    <figure class="product product6">
+      <figcaption class="name name3">Hankook</figcaption>
+      <figcaption class="type type3">K 708 155/65 R14</figcaption>
       <div class="picture picture3"></div>
-      <p class="price price3">393.00</p>
-      <p class="currency">грн.</p>
-    </div>
-    <div class="product product7">
-      <p class="name name7">Goodyear</p>
-      <p class="type type7">Ultra Grip Extreme</p>
+      <figcaption class="price price3">393.00</figcaption>
+      <figcaption class="currency">грн.</figcaption>
+    </figure>
+    <figure class="product product7">
+      <figcaption class="name name7">Goodyear</figcaption>
+      <figcaption class="type type7">Ultra Grip Extreme</figcaption>
       <div class="picture picture7"></div>
-      <p class="price price7">90.00</p>
-      <p class="currency">грн.</p>
-    </div>
-    <div class="product product8">
-      <p class="name name8">Nokian</p>
-      <p class="type type8">Hakkapeliitta R</p>
+      <figcaption class="price price7">90.00</figcaption>
+      <figcaption class="currency">грн.</figcaption>
+    </figure>
+    <figure class="product product8">
+      <figcaption class="name name8">Nokian</figcaption>
+      <figcaption class="type type8">Hakkapeliitta R</figcaption>
       <div class="picture picture8"></div>
-      <p class="price price8">115.00</p>
-      <p class="currency">грн.</p>
-    </div>
-    <div class="product product9">
-      <p class="name name9">Hankook</p>
-      <p class="type type9">K 708 155/65 R14</p>
+      <figcaption class="price price8">115.00</figcaption>
+      <figcaption class="currency">грн.</figcaption>
+    </figure>
+    <figure class="product product9">
+      <figcaption class="name name9">Hankook</figcaption>
+      <figcaption class="type type9">K 708 155/65 R14</figcaption>
       <div class="picture picture"></div>
-      <p class="price price9">393.00</p>
-      <p class="currency">грн.</p>
-    </div>
+      <figcaption class="price price9">393.00</figcaption>
+      <figcaption class="currency">грн.</figcaption>
+    </figure>
   </main>
-  <div class="right-column">
+  <aside class="right-column">
     <div class="brands">
       <div class="icon2"></div>
       <p>БРЕНДЫ:</p>
@@ -203,18 +204,43 @@
       </div>
     </section>
     <input type="button" class="button" name="choice" value="ВЫБРАТЬ">
-  </div>
+  </aside>
 </div>
-<div class="brandLogo"></div>
+<section class="sponsors">
+  <div class="sponsor">
+    <a href="#"><img src="img/toyo.png" alt=""></a>
+  </div>
+  <div class="sponsor">
+    <a href="#"><img class="sponsor--padding" src="img/bridgestone.png" alt=""></a>
+  </div>
+  <div class="sponsor">
+    <a href="#"><img src="img/continental.png" alt=""></a>
+  </div>
+  <div class="sponsor">
+    <a href="#"><img src="img/dooper).png" alt=""></a>
+  </div>
+  <div class="sponsor">
+    <a href="#"><img class="sponsor--padding" src="img/avon.png" alt=""></a>
+  </div>
+  <div class="sponsor">
+    <a href="#"><img src="img/factory.png" alt=""></a>
+  </div>
+  <div class="sponsor">
+    <a href="#"><img  class="sponsor--padding" src="img/pirelli.png" alt=""></a>
+  </div>
+  <div class="sponsor">
+    <a href="#"><img  class="sponsor--padding" src="img/dunlop.png" alt=""></a>
+  </div>
+</section>
 <footer class="footer">
-  <ul class="bottom-menu">
+  <ul class="bottom-menu clearfix">
     <li><a href="#">О Компании</a></li>
     <li><div class="side-border"></div></li>
     <li><a href="#">Доставка</a></li>
     <li><div class="side-border side-border2"></div></li>
     <li><a href="#">Статьи</a></li>
     <li><div class="side-border side-border3"></div></li>
-    <li><a class="clearfix" href="#">Контакты</a></li>
+    <li><a href="#">Контакты</a></li>
   </ul>
   <div class="globalVision">
   <a href="#">Создание сайта &copy; Global Vision</a>

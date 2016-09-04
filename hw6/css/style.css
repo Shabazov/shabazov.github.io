@@ -12,7 +12,14 @@
 }
 
 body {
+  position: relative;
   font-family: 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 header {
@@ -153,6 +160,18 @@ header {
   height: 9px;
   margin: 5px 13px 7px 0;
   background: url(../img/sprite.png) -69px -7px no-repeat;
+}
+
+.image {
+  position: relative;
+}
+
+.zazor__link {
+  position: absolute;
+  display: block;
+  top: 50px;
+  left: 3px;
+  padding: 60px 130px;
 }
 
 .navbar {
@@ -315,61 +334,31 @@ p.numbers {
 }
 
 .tire-list {
-  margin-top: 3px;
-  margin-left: 29px;
+  margin-left: 27px;
   list-style: none;
 }
 
-.tire-list li {
-  position: relative;
-}
-
-.circle {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin-bottom: 5px;
-  margin-left: 8px;
-  background: url(../img/sprite.png) -94px -29px no-repeat;
-}
-
-.circle:hover {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  margin-bottom: 5px;
-  margin-left: 8px;
-  background: url(../img/sprite.png) -104px -29px no-repeat;
-}
-
-.circle-last {
-  margin-bottom: 2px;
-}
-
-.circle-last:focus {
-  margin-bottom: 2px;
-}
-
 .tire-list a {
-  position: absolute;
-  top: -1px;
-  left: 18px;
+  padding-left: 21px;
+  background: url(../img/marker.png) 10px 7px no-repeat;
   font-size: 13px;
   color: #465961;
   text-decoration: none;
   letter-spacing: -0.1px;
 }
 
-.tire-list a:focus {
-  position: absolute;
-  top: -1px;
-  left: 18px;
+.tire-list a:hover {
   font-size: 14px;
+  background: url(../img/marker_bold.png) 10px 7px no-repeat;
   font-weight: 700;
   font-style: italic;
   color: #465961;
   text-decoration: underline;
   letter-spacing: -0.1px;
+}
+
+.wheels {
+  margin: 3px 0 0 1px;
 }
 
 .wheel {
@@ -399,8 +388,7 @@ p.numbers {
 }
 
 .wheel-list {
-  margin-top: 3px;
-  margin-left: 29px;
+  margin: -1px 0 0 25px;
   list-style: none;
 }
 
@@ -409,25 +397,26 @@ p.numbers {
 }
 
 .wheel-list a {
-  position: absolute;
-  top: -2px;
-  left: 18px;
+  padding-left: 21px;
+  background: url(../img/marker.png) 10px 7px no-repeat;
   font-size: 13px;
   color: #465961;
   text-decoration: none;
   letter-spacing: -0.1px;
 }
 
-.wheel-list a:focus {
-  position: absolute;
-  top: -2px;
-  left: 18px;
+.wheel-list a:hover {
+  background: url(../img/marker_bold.png) 10px 7px no-repeat;
   font-size: 14px;
   font-weight: 700;
   font-style: italic;
   color: #465961;
   text-decoration: underline;
   letter-spacing: -0.1px;
+}
+
+.bolts {
+  margin: 3px 0 0 1px;
 }
 
 .bolt {
@@ -457,8 +446,7 @@ p.numbers {
 }
 
 .bolt-list {
-  margin-top: 1px;
-  margin-left: 29px;
+  margin: -1px 0 0 25px;
   list-style: none;
 }
 
@@ -467,17 +455,16 @@ p.numbers {
 }
 
 .bolt-list a {
-  position: absolute;
-  left: 18px;
+  padding-left: 21px;
+  background: url(../img/marker.png) 10px 7px no-repeat;
   font-size: 13px;
   color: #465961;
   text-decoration: none;
   letter-spacing: -0.1px;
 }
 
-.bolt-list a:focus {
-  position: absolute;
-  left: 18px;
+.bolt-list a:hover {
+  background: url(../img/marker_bold.png) 10px 7px no-repeat;
   font-size: 14px;
   font-weight: 700;
   font-style: italic;
@@ -501,6 +488,7 @@ p.numbers {
   margin-left: 21px;
   width: 144px;
   height: 177px;
+  cursor: pointer;
 }
 
 .name {
@@ -728,10 +716,10 @@ p.numbers {
 
 .check-list input:checked + label::before {
   width: 10px;
-  height: 10px;
+  height: 12px;
   margin-left: 26px;
   padding-left: 13px;
-  background: url(../img/strelka.png) no-repeat;
+  background: url(../img/check.png) left no-repeat;
 }
 
 .tire2 {
@@ -763,21 +751,27 @@ p.numbers {
   letter-spacing: 0.7px;
 }
 
-.brandLogo {
-  position: absolute;
-  top: 1124px;
-  left: 260px;
-  width: 676px;
-  height: 27px;
-  clear: both;
-  margin: 38px auto;
-  background: url(../img/brandlogo.png);
+.sponsors {
+  width: 700px;
+  margin: 36px auto 0;
+  padding: 0 0 119px 26px;
+}
+
+.sponsor {
+  display: inline-block;
+  margin-right: 8.2px;
+}
+
+.sponsor--padding {
+  display: block;
+  padding-bottom: 6px;
 }
 
 .footer {
   position: absolute;
-  top: 1213px;
-  left: 143px;
+  bottom: 0;
+  left: 161px;
+  right: 161px;
   width: 908px;
   height: 99px;
   background-color: #213a4d;
@@ -785,7 +779,7 @@ p.numbers {
 }
 
 .bottom-menu {
-  margin-top: 3px;
+  margin-top: 4px;
   margin-left: 305px;
 }
 
@@ -823,7 +817,7 @@ p.numbers {
 
 .globalVision {
   width: 160px;
-  margin: 0 auto;
+  margin: 2px auto;
   padding-left: 5px;
 }
 
