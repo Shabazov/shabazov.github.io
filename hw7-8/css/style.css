@@ -947,7 +947,7 @@
   }
 
   .slider__buttons {
-    margin-left: 161px;
+    text-align: right;
   }
 
   .slider__buttons li {
@@ -1241,7 +1241,7 @@
   }
 
   .slider__buttons {
-    margin-left: 247px;
+    text-align: right;
   }
 
   .slider__buttons li {
