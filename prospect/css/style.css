@@ -73,6 +73,7 @@ body {
 
 .menu__link:hover {
   color: #3c90be;
+  transition: 0.3s;
 }
 
 .languages {
@@ -105,10 +106,11 @@ body {
 }
 
 .search {
-  float: left;
-  width: 300px;
+  position: absolute;
+  top: 35px;
+  left: 20px;
+  width: 250px;
   height: 350px;
-  margin: 35px 20px 10px 48px;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 2px 1px #ccc;
@@ -116,7 +118,7 @@ body {
 
 .search__header {
   display: block;
-  width: 74px;
+  width: 77px;
   margin: 20px auto;
   padding-bottom: 6px;
   border-bottom: 3px solid #4a409c;
@@ -155,22 +157,48 @@ body {
   outline: none;
 }
 
+.submit {
+  display: block;
+  width: 56px;
+  height: 22px;
+  margin: 30px auto 0;
+  border: 1px solid #778183;
+  border-radius: 3px;
+  color: #778183;
+  background: #fff;
+  box-shadow: 0 1px 1px #777;
+  outline: none;
+}
+
+.submit:hover {
+  color: #3e90be;
+  transition: 0.3s;
+}
+
+.submit:active {
+  margin-top: 30.5px;
+  background: #eee;
+  color: #3e90be;
+}
+
 .main {
-  float: left;
+  max-width: 78%;
+  height: auto;
+  margin: 33px 0 0 271px;
+}
+
+.main-wrapper {
   display: flex;
   flex-wrap: wrap;
-  width: 830px;
-  height: auto;
-  margin: 25px 0 15px;
 }
 
 .main__item {
-  width: 250px;
+  max-width: 280px;
   height: auto;
-  margin: 10px 12px;
-  padding-bottom: 5px;
+  margin: 3px 2% 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  background: rgb(249, 249, 249);
   box-shadow: 0 2px 1px #ccc;
   overflow: hidden;
 }
@@ -209,10 +237,21 @@ body {
   border-bottom: 3px solid #3e90be;
 }
 
-.navigation {
+.description {
   display: block;
-  position: relative;
-  margin: 10px auto;
+  width: 260px;
+  height: 52px;
+  margin: 6px auto 3px;
+  color: #99a3b1;
+  font-size: 13px;
+  font-weight: 300;
+  text-shadow: 0 1px 1px #fff;
+  overflow: hidden;
+}
+
+.navigation {
+  display: inline-block;
+  margin-left: 35%;
 }
 
 .navigation__item {
