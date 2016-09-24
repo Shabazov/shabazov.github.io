@@ -95,9 +95,11 @@ body {
 
 .slider {
   max-width: 100%;
-  height: 440px;
+  height: 350px;
   background: url(../img/slide1.jpg) top left no-repeat;
+  background-size: cover;
   border-top: 1px solid #fff;
+  box-shadow: 0 4px 5px #555;
 }
 
 .main-section {
@@ -294,4 +296,16 @@ body {
   width: 100%;
   height: 90px;
   background: #252525;
+}
+
+
+/*   PROPERTY PAGE   */
+
+.header__picture {
+  display: block;
+  width: 100%;
+  height: 300px;
+  background: url(../img/nosotros-1.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  box-shadow: 0 4px 5px #555;
 }

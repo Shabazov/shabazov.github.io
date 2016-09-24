@@ -121,3 +121,21 @@ var myBuilder = {
         }
     },
   }
+
+  myBuilder.createContainer();
+  myBuilder.createRows();
+  myBuilder.createFirstColumn();
+  myBuilder.createSecondColumn();
+  myBuilder.createThirdColumn();
+  myBuilder.createFourthColumn();
+  myBuilder.createFifthColumn();
+  myBuilder.createInputGroup1(1);
+  myBuilder.createInputGroup2(1);
+  myBuilder.createInputGroup3(1);
+  myBuilder.createInputGroup1(2);
+  myBuilder.createInputGroup2(2);
+  myBuilder.createInputGroup3(2);
+  myBuilder.createInputGroup1(3);
+  myBuilder.createInputGroup2(3);
+  myBuilder.createInputGroup3(3);
+  myBuilder.createSubmit();
