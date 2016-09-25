@@ -14,12 +14,15 @@
     <div class="wrapper">
         <nav class="clearfix">
           <h1 class="logo clearfix"><a class="logo__link" href=""><img src="img/logo.png" alt=""></a></h1>
-          <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="about.html">About Us</a></li>
-            <li class="menu__item"><a class="menu__link" href="reforms.html">Reforms</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Contacts</a></li>
-          </ul>
+          <div class="menu-wrapper">
+            <a href="" class="current__link"></a>
+            <ul class="menu menu--mobile">
+              <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="about.html">About Us</a></li>
+              <li class="menu__item"><a class="menu__link" href="reforms.html">Reforms</a></li>
+              <li class="menu__item"><a class="menu__link" href="contacts.html">Contacts</a></li>
+            </ul>
+          </div>
           <div class="languages">
             <a class="languages__link"href=""><img src="img/en.png" alt=""></a>
             <a class="languages__link"href=""><img src="img/es.png" alt=""></a>
@@ -35,10 +38,10 @@
       <h2 class="main-contacts__title">Contact Us</h2>
       <div class="main-contacts__data">
         <h4>Prospect</h4>
-        <span class="telephone">(+34) 656 63 86 82</span>
-        <span class="telephone">(+34) 722 51 96 84</span>
-        <span class="telephone">(+34) 965 32 21 65</span>
-        <span class="mail">info@prospect.es</span>
+        <span class="telephone main-contacts__data--shift">(+34) 656 63 86 82</span>
+        <span class="telephone main-contacts__data--shift">(+34) 722 51 96 84</span>
+        <span class="telephone main-contacts__data--shift">(+34) 965 32 21 65</span>
+        <span class="mail main-contacts__data--shift">info@prospect.es</span>
         <span class="adress">Avda Espuña 3, 1c 03186 Los Altos / Torrevieja ,Alicante (España)</span>
       </div>
       <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div class="myMap" style='overflow:hidden;height:375px;width:707px;'><div id='gmap_canvas' style='height:367px;width:700px;'></div><div><small><a href="http://www.embedgooglemaps.com/ru/">Вставить Google Maps									наш сайт									нажмите здесь</a></small></div><div><small><a href="http://buyproxies.io/">Click here!</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:11,center:new google.maps.LatLng(37.953805,-0.7175916999999572),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(37.953805,-0.7175916999999572)});infowindow = new google.maps.InfoWindow({content:'<strong>location</strong><br>Avda Espuña 3, 1c 03186 Los Altos / Torrevieja ,Alicante (España)<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>

@@ -15,12 +15,15 @@
     <div class="wrapper">
         <nav class="clearfix">
           <h1 class="logo clearfix"><a class="logo__link" href=""><img src="img/logo.png" alt=""></a></h1>
-          <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="about.html">About Us</a></li>
-            <li class="menu__item"><a class="menu__link" href="reforms.html">Reforms</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Contacts</a></li>
-          </ul>
+          <div class="menu-wrapper">
+            <a href="" class="current__link"></a>
+            <ul class="menu menu--mobile">
+              <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="about.html">About Us</a></li>
+              <li class="menu__item"><a class="menu__link" href="reforms.html">Reforms</a></li>
+              <li class="menu__item"><a class="menu__link" href="contacts.html">Contacts</a></li>
+            </ul>
+          </div>
           <div class="languages">
             <a class="languages__link"href=""><img src="img/en.png" alt=""></a>
             <a class="languages__link"href=""><img src="img/es.png" alt=""></a>
@@ -28,7 +31,7 @@
             <a class="languages__link"href=""><img src="img/sv.png" alt=""></a>
           </div>
         </nav>
-        <div class="header__picture"></div>
+        <div class="header__picture--property"></div>
     </div> <!-- HEADER WRAPPER -->
   </header>
   <main class="property__description">
@@ -133,7 +136,7 @@
         </div>
         </a>
       </figure>
-      <figure class="main__item similar--item">
+      <figure class="main__item similar--item similar--item__last">
         <a class="main__item__link" href="objectProperty.html">
         <img class="main__item__preview" src="img/preview_img.jpg" alt="">
         <figcaption>
