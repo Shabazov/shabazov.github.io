@@ -7,19 +7,20 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
   <title>Prospect</title>
 </head>
 <body>
   <header class="header clearfix">
     <div class="wrapper">
         <nav class="clearfix">
-          <h1 class="logo clearfix"><a class="logo__link" href=""><img src="img/logo.png" alt=""></a></h1>
+          <h1 class="logo clearfix"><a class="logo__link" href="index.html"><img src="img/logo.png" alt=""></a></h1>
           <div class="menu-wrapper">
             <a href="" class="current__link"></a>
             <ul class="menu menu--mobile">
-              <li class="menu__item"><a class="menu__link" href="">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="index.html">Home</a></li>
               <li class="menu__item"><a class="menu__link" href="about.html">About Us</a></li>
-              <li class="menu__item"><a class="menu__link" href="reforms.html">Reforms</a></li>
+              <li class="menu__item"><a class="menu__link menu__link--current" href="reforms.html">Reforms</a></li>
               <li class="menu__item"><a class="menu__link" href="contacts.html">Contacts</a></li>
             </ul>
           </div>
@@ -30,9 +31,52 @@
             <a class="languages__link"href=""><img src="img/sv.png" alt=""></a>
           </div>
         </nav>
-        <div class="header__picture header__picture--reforms"></div>
     </div> <!-- HEADER WRAPPER -->
   </header>
+  <section class="slider">
+    <div class="wrapper">
+      <script src="script/bootstrap.js"></script>
+      <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item">
+          <span class="slider--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ratione blanditiis odio enim tempore. Laboriosam laudantium nisi veniam minus maxime ut, architecto culpa tempore! Esse quidem, vitae debitis hic ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste totam quo, ullam necessitatibus enim tempore voluptas! Dicta porro fugiat, fugit rerum odit consequuntur accusamus, deserunt nihil et voluptates, amet praesentium?</span>
+          <img src="img/carousel/p1-1.jpg" alt="">
+        </div>
+        <div class="item">
+          <span class="slider--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ratione blanditiis odio enim tempore. Laboriosam laudantium nisi veniam minus maxime ut, architecto culpa tempore! Esse quidem, vitae debitis hic ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste totam quo, ullam necessitatibus enim tempore voluptas! Dicta porro fugiat, fugit rerum odit consequuntur accusamus, deserunt nihil et voluptates, amet praesentium?</span>
+          <img src="img/carousel/p1-2.jpg" alt="">
+        </div>
+        <div class="item">
+          <span class="slider--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ratione blanditiis odio enim tempore. Laboriosam laudantium nisi veniam minus maxime ut, architecto culpa tempore! Esse quidem, vitae debitis hic ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste totam quo, ullam necessitatibus enim tempore voluptas! Dicta porro fugiat, fugit rerum odit consequuntur accusamus, deserunt nihil et voluptates, amet praesentium?</span>
+          <img src="img/carousel/p1-3.jpg" alt="">
+        </div>
+        <div class="item">
+          <span class="slider--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ratione blanditiis odio enim tempore. Laboriosam laudantium nisi veniam minus maxime ut, architecto culpa tempore! Esse quidem, vitae debitis hic ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste totam quo, ullam necessitatibus enim tempore voluptas! Dicta porro fugiat, fugit rerum odit consequuntur accusamus, deserunt nihil et voluptates, amet praesentium?</span>
+          <img src="img/carousel/p1-4.jpg" alt="">
+        </div>
+        <div class="item">
+          <span class="slider--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ratione blanditiis odio enim tempore. Laboriosam laudantium nisi veniam minus maxime ut, architecto culpa tempore! Esse quidem, vitae debitis hic ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste totam quo, ullam necessitatibus enim tempore voluptas! Dicta porro fugiat, fugit rerum odit consequuntur accusamus, deserunt nihil et voluptates, amet praesentium?</span>
+          <img src="img/carousel/p1-5.jpg" alt="">
+        </div>
+        <div class="item">
+          <span class="slider--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ratione blanditiis odio enim tempore. Laboriosam laudantium nisi veniam minus maxime ut, architecto culpa tempore! Esse quidem, vitae debitis hic ea. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste totam quo, ullam necessitatibus enim tempore voluptas! Dicta porro fugiat, fugit rerum odit consequuntur accusamus, deserunt nihil et voluptates, amet praesentium?</span>
+          <img src="img/carousel/p1-6.jpg" alt="">
+        </div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev"></a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next"></a>
+    </div>
+  </section>
   <section class="main-reforms clearfix">
     <div class="wrapper clearfix">
       <aside class="employee">
