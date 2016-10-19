@@ -494,3 +494,10 @@ a.employee__link {
   color: #777;
   text-shadow: 0px 1px 1px #eee;
 }
+
+/*  REFORMS  */
+
+.employee__photo--volodymyr {
+  background: url(../img/vladimir.jpg) no-repeat;
+  background-size: cover;
+}
