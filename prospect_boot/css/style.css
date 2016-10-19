@@ -217,9 +217,47 @@ body {
     box-shadow: 0 2px 0 #ccc;
 }
 
+.thumbnail img {
+  border-bottom: 3px solid #3e90be;
+}
+
 .thumbnail .caption-full {
     padding: 9px;
     color: #333;
+}
+
+.main__item__parameters {
+  display: inline-block;
+  width: auto;
+  height: 22%;
+  margin: 2% 5% 3% 1%;
+  padding-left: 14%;
+  font-size: 1em;
+  color: #99a3b1;
+  line-height: 28px;
+}
+
+.main__item__parameters--rooms {
+  background: url(../img/bed-1.svg) left center no-repeat;
+}
+
+.main__item__parameters--bath {
+  background: url(../img/bathtub.svg) left center no-repeat;
+}
+
+.main__item__parameters--meters {
+  background: url(../img/home-1.svg) left center no-repeat;
+}
+
+.caption {
+  height: auto;
+}
+
+.object-description {
+  display: block;
+  width: 18em;
+  height: 4em;
+  overflow: hidden;
 }
 
 .footer {
