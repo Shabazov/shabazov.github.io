@@ -190,6 +190,10 @@ body {
     border-radius: 4px;
 }
 
+.carousel-inner>.item>img {
+  height: auto;
+}
+
 .carousel-inner--text>.item>img {
   max-width: 70%;
   height: auto;
@@ -258,7 +262,7 @@ body {
   display: inline-block;
   width: auto;
   margin: 2% 5% 3% 1%;
-  padding-left: 14%;
+  padding-left: 2.3em;
   font-size: 1em;
   color: #99a3b1;
   line-height: 28px;
@@ -307,6 +311,13 @@ body {
   margin-left: 20px;
 }
 
+.footer__contacts span {
+  display: block;
+  height: 1.3em;
+  font-size: 0.9em;
+  padding-left: 8%;
+}
+
 .telephone {
   background: url(../img/telephone.svg) left center no-repeat;
 }
@@ -318,7 +329,6 @@ body {
 .main-contacts__data {
   display: block;
   margin-bottom: 2px;
-  padding-left: 35px;
   color: #555;
   text-shadow: 0px 1px 1px #eee;
 }
@@ -531,18 +541,22 @@ a.employee__link {
 
 /*   CONTACTS   */
 
+.contact-content div {
+  margin-top: 2em;
+}
+
 .contacts__map {
   margin: 0 0 0 1em;
 }
 
 .main-contacts {
   display: block;
-  width: 38em;
-  margin: 0;
+  width: 36em;
+  margin-left: 2.7em;
 }
 
 .main-contacts__title {
-  margin: 0 0 2% 11%;
+  margin: 0 0 2% 5%;
 }
 
 .main-contacts__data {
@@ -569,9 +583,10 @@ a.employee__link {
 }
 
 .footer--contacts {
+  height: 6em;
   margin-top: 5em;
 }
 
-.footer__contacts span {
-  margin: 0;
+.footer--contacts .footer__contacts {
+  display: none;
 }
