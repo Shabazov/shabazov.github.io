@@ -190,6 +190,33 @@ body {
     border-radius: 4px;
 }
 
+.carousel-inner--text>.item>img {
+  max-width: 70%;
+  height: auto;
+  margin-left: 30%;
+  position: absolute;
+  top: -41px;
+}
+
+.slider--text {
+  display: block;
+  width: 30%;
+  height: 350px;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  border-right: 2px solid rgba(80, 78, 76, 0.7);
+  color: #504e4c;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  text-shadow: 0 1px 2px #ccc;
+  -webkit-box-shadow: inset 0px 0px 62px -10px rgba(92,56,20,0.29);
+  -moz-box-shadow: inset 0px 0px 62px -10px rgba(92,56,20,0.29);
+  box-shadow: inset 0px 0px 62px -10px rgba(92,56,20,0.29);
+}
+
 .caption {
     height: 90%;
     overflow: hidden;
@@ -504,8 +531,14 @@ a.employee__link {
 
 /*   CONTACTS   */
 
+.contacts__map {
+  margin: 0 0 0 1em;
+}
+
 .main-contacts {
-  /*margin-top: 50px;*/
+  display: block;
+  width: 38em;
+  margin: 0;
 }
 
 .main-contacts__title {
@@ -533,4 +566,12 @@ a.employee__link {
 
 .adress {
   background: url(../img/home-1.svg) left center no-repeat;
+}
+
+.footer--contacts {
+  margin-top: 5em;
+}
+
+.footer__contacts span {
+  margin: 0;
 }
