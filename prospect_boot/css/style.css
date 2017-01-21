@@ -32,9 +32,28 @@ body {
   line-height: 45px;
 }
 
+.navbar-header {
+  height: auto;
+}
+
+.navbar-nav>li>a  {
+  line-height: 12px;
+}
+
 .navbar-inverse .navbar-nav>li>a:hover {
   color: #3c90be;
   transition: 0.2s;
+}
+
+.navbar-nav {
+  background: rgb(174,174,174);
+  background: -moz-linear-gradient(top, rgb(174,174,174) 0%, rgb(254,254,254) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgb(174,174,174)), color-stop(100%, rgb(254,254,254)));
+  background: -webkit-linear-gradient(top, rgb(174,174,174) 0%, rgb(254,254,254) 100%);
+  background: -o-linear-gradient(top, rgb(174,174,174) 0%, rgb(254,254,254) 100%);
+  background: -ms-linear-gradient(top, rgb(174,174,174) 0%, rgb(254,254,254) 100%);
+  background: linear-gradient(to bottom, rgb(174,174,174) 0%, rgb(254,254,254) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aeaeae', endColorstr='#fefefe', GradientType=0 );
 }
 
 .navbar-nav a {
@@ -48,7 +67,7 @@ body {
 
 .navbar-inverse .navbar-nav>.active>a {
    color: #000;
-   background: none;
+   background: #999;
 }
 
 .navbar-inverse .navbar-nav>.active>a:focus {
