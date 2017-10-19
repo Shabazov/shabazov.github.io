@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #264b71;
+}
+
+.title {
+  padding: 40px 20px;
+  color: #bfd5ec;
+  text-align: center;
+}
+
+.wrapper {
+  position: relative;
+  display: block;
+  width: 997px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  display: block;
+  width: 664px;
+  margin: 3px auto;
+  overflow: hidden;
+}
+
+.arrow {
+  display: block;
+  position: absolute;
+  /*top: 0;
+  left: 0;*/
+  width: 69px;
+  height:68px;
+}
+
+.arrow--left {
+  top: 25px;
+  left: 43px;
+  background-image: url(../img/back.svg);
+}
+
+.arrow--right {
+  top: 25px;
+  right: 43px;
+  background-image: url(../img/next.svg);
+}
+
+.carousel {
+  position: relative;
+  display: block;
+  width: 1000px;
+  list-style: none;
+  overflow: hidden;
+}
+
+.carousel__item {
+  float: left;
+  margin: 3px;
+}
+
+.carousel__image {
+  display: block;
+  max-width: 160px;
+}
