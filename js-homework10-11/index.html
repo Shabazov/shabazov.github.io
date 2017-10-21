@@ -8,12 +8,15 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
+  <script src="js/jquery.carousel.js"></script>
+  <script src="js/tmpl.js"></script>
+  <script src="js/script.js"></script>
   <title>Document</title>
 </head>
 <body>
   <h1 class="title">карусэл карусэл</h1>
   <div class="wrapper">
-    <div class="arrow arrow--left"></div>
+    <a href="#"><div class="arrow arrow--left"></div></a>
     <div class="overlay">
       <ul class="carousel">
         <li class="carousel__item"><img class="carousel__image" src="img/_CSC3250.JPG" alt="pic"><a class="item__link" href="#"></a></img></li>
@@ -24,7 +27,30 @@
         <li class="carousel__item"><img class="carousel__image" src="img/_DSC0147.JPG" alt="pic"><a class="item__link" href="#"></a></img></li>
       </ul>
     </div>
-    <div class="arrow arrow--right"></div>
+    <a href="#"><div class="arrow arrow--right"></div></a>
   </div>
+  <section class="target">
+
+  </section>
+  <script type="text/html" id="test">
+    <h1><%= name %></h1>
+      <!-- <p class="student"><%= education %></p>
+      <div class="becauseOf">
+        <h3>Хочу учить front-end потому что:</h3>
+      </div>
+      <div class="list1">
+        <ul>
+          <% reasons.forEach(function(item) { %>
+            <li><%- item %></li>
+          <% }); %>
+        </ul>
+      </div>
+      <div class="telefono">
+        <h3>Номер моего телефона:</h3>
+      </div>
+      <div class="numero">
+        <p><%= telephone %></p>
+      </div> -->
+  </script>
 </body>
 </html>
