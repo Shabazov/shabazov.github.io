@@ -6,7 +6,7 @@ $(function() {
   var data = {
     name: 'Iegor Shabazov',
     education: 'GoIT',
-    reasons: ["find a good job", "gain new knowledge", "start a new life"],
+    reasons: ["find a good job", "gain new knowledge"],
     telephone: '717701079'
   };
 
