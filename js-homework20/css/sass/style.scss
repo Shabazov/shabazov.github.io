@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  display: block;
+  width: 1160px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.header {
+  padding-top: 30px;
+}
+
+.social {
+  position: relative;
+  float: right;
+  margin-top: -35px;
+  .social__item {
+    float: left;
+    list-style: none;
+    margin-right: 12px;
+    .social__link {
+      display: block;
+      width: 16px;
+      height: 17px;
+      background-image: url(../img/social-sprite.png);
+      text-decoration: none;
+    }
+  }
+}
+
+.social--fb {
+  background-position: 1px 0;
+}
+
+.social--twitter {
+  background-position: 74px 0;
+}
+
+.social--rsa {
+  background-position: 55px 0;
+}
+
+.social--linked {
+  background-position: 36px 0;
+}
+
+.social--skype {
+  background-position: 17px -2px;
+}
+
+// NAVBAR
+
+.menu {
+  position: relative;
+  display: block;
+  height: 50px;
+  background-color: #2a2d32;
+  .menu__item {
+    float: left;
+    width: 125px;
+    list-style: none;
+    border-right: 1px solid #181a1d;
+    .menu__link {
+      margin-left: 45px;
+      line-height: 50px;
+      font-family: 'Ubuntu Condensed', sans-serif;
+      font-size: 14px;
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .menu__link:hover {
+      color: #ffcc00;
+    }
+    .menu__item:focus {
+      background-color: #3399ff;
+    }
+  }
+}
+
+.search {
+  display: block;
+  padding: 0 12px;
+  position: absolute;
+  top: 8px;
+  right: 7px;
+  width: 235px;
+  height: 35px;
+  font-size: 14px;
+  background-color: #35383c;
+  border: 1px solid #181a1d;
+}
+
+// SLIDER
+.slider {
+  margin: 40px auto 20px;
+}
+
+.mySlides {
+  display: none;
+}
+.mySlides+img {
+  width: 1160px;
+  height: 469px;
+}
+
+.w3-left, .w3-right, .w3-badge {
+  cursor: pointer;
+}
+
+.w3-badge {
+  height: 13px;
+  width: 13px;
+  padding:0;
+}
+
+// CATEGORIES
+
+.categories__item {
+  position: relative;
+  float: left;
+  width: 340px;
+  margin: 0px 40px 80px 0px;
+  padding: 55px 0px 0px 100px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.categories__item:first-child {
+  margin-left: 20px;
+}
+
+.categories__item::before {
+  content: '';
+  display: block;
+  width: 82px;
+  height: 65px;
+  background: url(../img/numbers.png) 1px 0;
+  position: absolute;
+  top: 70px;
+  left: 5px;
+}
+
+.categories__item--techno::before {
+  width: 92px;
+  background: url(../img/numbers.png) -85px 0;
+  left: 0;
+}
+
+.categories__item--car::before {
+  width: 92px;
+  background: url(../img/numbers.png) 92px 0;
+  left: 0;
+}
+
+.categories__title {
+  font-size: 20px;
+  color: rgb(42, 43, 46);
+  text-align: left;
+}
+
+.categories__title::before {
+  content: '';
+  display: block;
+  width: 37px;
+  height: 36px;
+  background-image: url(../img/icons.png);
+  background-position: 0px 0px;
+}
+
+.categories__title--techno::before {
+  background-position: -38px 0px;
+}
+
+.categories__title--car::before {
+  background-position: -82px 0px;
+}
+
+.categories__text {
+  margin: 20px 0px 20px 0px;
+  font-family: 'Arial';
+  font-size: 13px;
+  color: rgb(138, 138, 138);
+}
+
+.categories__link {
+  position: relative;
+  text-decoration: none;
+  color: #333333;
+}
+
+.categories__link:hover {
+  color: #3399ff;
+}
+
+.categories__link::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url(../img/icons.png);
+  background-position: 16px 24px;
+  position: absolute;
+  top: 5px;
+  right:-17px;
+}
+
+.categories__link:hover::after {
+  background-position: 30px 24px;
+}
+
+// SERVICES
+
+.wrapper--services {
+  width: 100%;
+}
+
+.inner-wrapper {
+  position: relative;
+  display: block;
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.services {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 490px;
+  background-color: #333333;
+}
+
+.services__title {
+  position: relative;
+  margin: 40px 0px;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+}
+
+.service__item {
+  float: left;
+  margin: 0px 35px 35px 0px;
+}
+
+.service__link {
+  display: block;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url(../img/hover.png);
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.service__item:hover .overlay {
+  bottom: 0;
+  height: 260px;
+}
+
+.service__item:hover .service__text {
+  color: #ffcc00;
+}
+
+.service__item:last-child {
+  margin: 0px 0px 35px 0px;
+}
+
+.service__text {
+  color: #fff;
+  text-align: center;
+  margin-top: 35px;
+}

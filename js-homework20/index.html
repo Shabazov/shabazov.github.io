@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Condensed" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="js/dest/script.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper">
+      <div class="logo">
+        <a href="#" class="logo__link">
+          <img src="img/a.png" alt="img" class="logo__image">
+        </a>
+      </div>
+      <ul class="social">
+        <li class="social__item"><a href="#" class="social__link social--fb"></a></li>
+        <li class="social__item"><a href="#" class="social__link social--twitter"></a></li>
+        <li class="social__item"><a href="#" class="social__link social--rsa"></a></li>
+        <li class="social__item"><a href="#" class="social__link social--linked"></a></li>
+        <li class="social__item"><a href="#" class="social__link social--skype"></a></li>
+      </ul>
+    </div>
+  </header>
+  <navbar class="navbar">
+    <div class="wrapper">
+      <ul class="menu">
+        <li class="menu__item"><a href="" class="menu__link">home</a></li>
+        <li class="menu__item"><a href="" class="menu__link">features</a></li>
+        <li class="menu__item"><a href="" class="menu__link">services</a></li>
+        <li class="menu__item"><a href="" class="menu__link">news</a></li>
+        <li class="menu__item"><a href="" class="menu__link">shop</a></li>
+      </ul>
+        <input class="search" type="text" placeholder="Search...">
+    </div>
+  </navbar>
+  <section class="slider">
+    <div class="wrapper">
+      <div class="w3-content w3-display-container" style="max-width:1160px">
+       <img class="mySlides" src="img/slider.jpg" style="width:100%">
+       <img class="mySlides" src="img/IMG_00157.jpg" style="width:100%">
+       <img class="mySlides" src="img/IMG_00181.jpg" style="width:100%">
+       <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+      </div>
+    </div>
+    <script src="js/dest/slider.script.js"></script>
+  </section>
+  <section class="categories">
+    <div class="wrapper">
+      <div class="categories__item categories__item--setting">
+        <h3 class="categories__title categories__title--setting">Power Inside</h3>
+        <p class="categories__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum commodi voluptas distinctio fugit. Consequatur
+        </p>
+        <a href="#" class="categories__link">Read More</a>
+      </div>
+      <div class="categories__item categories__item--techno">
+        <h3 class="categories__title categories__title--techno">New Technologies</h3>
+        <p class="categories__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum commodi voluptas distinctio fugit. Consequatur
+        </p>
+        <a href="#" class="categories__link">Read More</a>
+      </div>
+      <div class="categories__item categories__item--car">
+        <h3 class="categories__title categories__title--car">Fast Support</h3>
+        <p class="categories__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum commodi voluptas distinctio fugit. Consequatur
+        </p>
+        <a href="#" class="categories__link">Read More</a>
+      </div>
+    </div>
+  </section>
+  <section class="services">
+    <div class="wrapper wrapper--services">
+        <div class="inner-wrapper">
+          <h3 class="services__title">Our Services</h3>
+          <div class="service__item">
+            <a href="" class="service__link">
+              <img src="img/schedule.jpg" alt="pic" class="service__image">
+              <div class="overlay"></div>
+              <p class="service__text">Schedule Services</p>
+            </a>
+          </div>
+          <div class="service__item">
+            <a href="" class="service__link">
+              <img src="img/secondSer.jpg" alt="pic" class="service__image">
+              <div class="overlay"></div>
+              <p class="service__text">Preventive Maintance</p>
+            </a>
+          </div>
+          <div class="service__item">
+            <a href="" class="service__link">
+              <img src="img/tire.jpg" alt="pic" class="service__image">
+              <div class="overlay"></div>
+              <p class="service__text">Tire and Wheel Servises</p>
+            </a>
+          </div>
+          <div class="service__item">
+            <a href="" class="service__link">
+              <img src="img/repair.jpg" alt="pic" class="service__image">
+              <div class="overlay"></div>
+              <p class="service__text">Repair Services</p>
+            </a>
+          </div>
+        </div>
+    </div>
+  </section>
+  <section class="news">
+    <div class="wrapper">
+      <h2>Latest News</h2>
+      <div class="news__item">
+        <div class="news__image">
+          <img src="" alt="img">
+          <span class="news__month">Jan</span>
+          <span class="news__date">21</span>
+        </div>
+        <h3 class="news__title">Advanced Machinery Helps Improve Quality</h3>
+        <span class="news__autho">by <span>cmsmasters</span> Comments <span>6</span> </span>
+        <p class="news__text">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero praesentium iste perferendis optio autem ducimus placeat. Expedita laudantium cumque, suscipit soluta, quis reprehenderit harum dolorem ab nesciunt vitae ea totam.</p>
+      </div>
+      <div class="news__item">
+        <div class="news__image">
+          <img src="" alt="img">
+          <span class="news__month">Jan</span>
+          <span class="news__date">21</span>
+        </div>
+        <h3 class="news__title">Powerful Technices for Advenced Sevice</h3>
+        <span class="news__autho">by <span>cmsmasters</span> Comments <span>3</span> </span>
+        <p class="news__text">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero praesentium iste perferendis optio autem ducimus placeat. Expedita laudantium cumque, suscipit soluta, quis reprehenderit harum dolorem ab nesciunt vitae ea totam.</p>
+      </div>
+      <div class="dropDown">
+        <h2>Banners PLace</h2>
+        <ul class="dropDown__menu">
+          <li class="dropDown__item"><a href="#" class="dropDown__link">Accordion Panel 1</a>
+            <ul class="submenu">
+              <li>
+                <p class="submenu__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint voluptatum doloremque ab voluptates sunt fugit animi minima, itaque in voluptas numquam dicta rerum, assumenda eveniet! Nobis, quis molestiae magni earum!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="dropDown__item"><a href="#" class="dropDown__link">Accordion Panel 2</a>
+            <ul class="submenu">
+              <li>
+                <p class="submenu__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati harum dicta, repellat aperiam quisquam voluptate. Veritatis omnis fugit libero, nam quas quos voluptate culpa velit doloribus? Maiores veritatis perspiciatis, incidunt!
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="dropDown__item"><a href="#" class="dropDown__link">Accordion Panel 3</a>
+            <ul class="submenu">
+              <li>
+                <p class="submenu__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos dignissimos nostrum ipsa in, accusantium odit velit autem obcaecati dicta non ratione ad quis perferendis quidem incidunt asperiores nobis accusamus a?
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li class="dropDown__item"><a href="#" class="dropDown__link">Accordion Panel 4</a>
+            <ul class="submenu">
+              <li>
+                <p class="submenu__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam sunt unde fugit sequi amet veniam ducimus suscipit. Velit repellat, odit molestiae quasi ad vitae delectus, dolore fuga error numquam reiciendis.
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="sponsors">
+    <div class="wrapper">
+      <div class="sponsors__item"></div>
+      <div class="sponsors__item"></div>
+      <div class="sponsors__item"></div>
+      <div class="sponsors__item"></div>
+      <div class="sponsors__item"></div>
+      <div class="sponsors__item"></div>
+    </div>
+  </section>
+  <section class="prefooter">
+    <div class="wrapper">
+      <div class="prefooter__item">
+        <h3>Socials</h3>
+        <ul class="prefooter__menu">
+          <li class="prefooter__item"><a href="" class="prefooter__link">Facebook</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">Flickr</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">Twitter</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">Vimeo</a></li>
+        </ul>
+      </div>
+      <div class="prefooter__item">
+        <h3>Links</h3>
+        <ul class="prefooter__menu">
+          <li class="prefooter__item"><a href="" class="prefooter__link">how to write a blog</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">Create a blog in 4 steps</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">15 tips to increase traffic</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">20 blog post ideas</a></li>
+        </ul>
+      </div>
+      <div class="prefooter__item">
+        <h3>Blogroll</h3>
+        <ul class="prefooter__menu">
+          <li class="prefooter__item"><a href="" class="prefooter__link">Blogs blog</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">Roll Up Roll Up</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">Blog Free</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">Wordpress Blog</a></li>
+        </ul>
+      </div>
+      <div class="prefooter__item">
+        <h3>About us</h3>
+        <ul class="prefooter__menu">
+          <li class="prefooter__item"><a href="" class="prefooter__link">Agriculture</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">Harvest</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">Company News</a></li>
+          <li class="prefooter__item"><a href="" class="prefooter__link">Investor relations</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <a href="" class="footer__location">Build Home Ltd., Sreet name 123, city name</a>
+    <a href="" class="footer__telephone">+12 345 678 900</a>
+    <a href="" class="footer__mail">info@buildhome.web</a>
+  </footer>
+</body>
+</html>
