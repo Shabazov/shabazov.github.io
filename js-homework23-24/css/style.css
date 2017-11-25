@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: block;
+  width: 800px;
+  margin: 100px auto;
+  padding: 10px;
+  background-color: rgba(249, 232, 28, 0.5);
+}
+
+.toDoList {
+  width: 160px;
+  margin: 10px auto;
+  list-style: none;
+}
+
+.toDoList__item {
+  text-align: center;
+}
+
+.removeItem {
+  display: inline-block;
+  width: 30px;
+}
+
+.controls {
+  display: block;
+  width: 160px;
+  margin: 10px auto;
+}
+
+.inpt {
+  display: block;
+  width: 160px;
+  height: 20px;
+  margin: 10px auto;
+}
+
+.btn {
+  display: block;
+  width: 160px;
+  height: 20px;
+  margin: 0px auto;
+}
