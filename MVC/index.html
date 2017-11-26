@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="src/css/style.css">
+  <script data-main="src/js/app" src="src/js/lib/require.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/template" id="wrapper-template">
+    <div class="wrapper">
+      <h1>ToDo</h1>
+      <ul class="item-list"></ul>
+      <div class="controlls">
+        <input type="text" class="item-value" placeholder="      write a thing todo">
+        <button class="item-add">add</button>
+      </div>
+    </div>
+  </script>
+  <script type="text/template" id="list-template">
+    <% for(let i = 0; i < data.length; i++) { %>
+      <li>
+        <input type="checkbox" class="check-list">
+        <input type="text" class="edit-list" disabled="disabled" value="<%- data[i] %>"
+        title="You TODO check please and remove after">
+        <span data-value="<%= data[i] %>" class="item-edit">e</span>
+        <span data-value="<%= data[i] %>" class="item-delete">x</span>
+      </li>
+      <% }; %>
+  </script>
+</body>
+</html>
