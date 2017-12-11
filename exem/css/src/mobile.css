@@ -10,6 +10,11 @@
   font-weight: normal;
   font-style: normal; }
 
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
+
 @media (max-width: 767px) {
   .wrapper {
     position: relative;
@@ -88,8 +93,41 @@
     border-style: none;
     outline: none !important;
     cursor: pointer; }
-  .howItWorks {
+  .howItWorks__title {
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 22px;
     color: #333333;
-    text-align: center; } }
+    text-align: center; }
+  .mySlide {
+    margin-bottom: 10px; }
+  .dimmer--slide {
+    max-width: 300px;
+    max-height: 240px;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .mySlide__step {
+    position: absolute;
+    top: 66px;
+    left: 20px;
+    padding: 5px 10px;
+    color: #fff;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: #ff4e50;
+    border-radius: 15px; }
+  .mySlide__title {
+    position: absolute;
+    top: 105px;
+    left: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Montserrat", Arial, sans-serif; }
+  .mySlide__text {
+    font-size: 14px;
+    font-family: "Roboto-Light", Arial, sans-serif;
+    color: #cccccc;
+    text-align: left;
+    text-transform: lowercase;
+    position: absolute;
+    top: 175px;
+    left: 20px; } }

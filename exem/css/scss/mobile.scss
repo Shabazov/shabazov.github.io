@@ -17,6 +17,14 @@ $header-background: url(../../img/top1.jpg) 50% 0;
 $montserrat: 'Montserrat', Arial, sans-serif;
 $roboto: 'Roboto-Light', Arial, sans-serif;
 $white: #fff;
+$red: #ff4e50;
+
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
 
 @media(max-width: 767px) {
 
@@ -127,4 +135,46 @@ $white: #fff;
      text-align: center;
    }
 
+   .mySlide {
+     margin-bottom: 10px;
+   }
+
+   .dimmer--slide {
+     max-width: 300px;
+     max-height: 240px;
+     background-color: rgba(0, 0, 0, 0.3);
+   }
+
+   .mySlide__step {
+     position: absolute;
+     top: 66px;
+     left: 20px;
+     padding: 5px 10px;
+     color: $white;
+     font-family: $montserrat;
+     font-size: 10px;
+     text-transform: uppercase;
+     background-color: $red;
+     border-radius: 15px;
+   }
+
+   .mySlide__title {
+     position: absolute;
+     top: 105px;
+     left: 20px;
+     color: $white;
+     font-size: 24px;
+     font-family: $montserrat;
+   }
+
+   .mySlide__text {
+     font-size: 14px;
+     font-family: $roboto;
+     color: rgb(204, 204, 204);
+     text-align: left;
+     text-transform: lowercase;
+     position: absolute;
+     top: 175px;
+     left: 20px;
+   }
 }
