@@ -1,0 +1,258 @@
+@require '_var.styl'
+
+
+  // NAVBAR ////////////////////////////////////////
+
+.navbar-brand
+  display: block
+  width 3rem
+  height 3rem
+  background-image: url(../img/005-tools.svg)
+
+.social
+  display: flex
+  justify-content: space-between
+  padding-top 1rem
+  margin-right: 2rem
+  width 14rem
+  list-style: none
+
+.social__item
+  width: 1.9rem
+  height: 1.9rem
+  background-size: cover
+
+.social__face
+  background-image: url(../img/008-facebook.svg)
+.social__vk
+  background-image: url(../img/002-vk.svg)
+.social__twitter
+  background-image: url(../img/007-twitter.svg)
+.social__insta
+  background-image: url(../img/006-instagram.svg)
+.social__google
+  background-image: url(../img/004-google-plus.svg)
+
+
+  // CONTENT ///////////////////////////////////////
+
+.jumbotron-fluid
+  .container-fluid
+    background-color: transparent
+
+.jumbotron-fluid
+  @media screen and (min-width: 576px)
+    background-image: url(../img/home-construction-loan2.jpg)
+    background-size: cover
+
+.jumbo-flex
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+
+  .title,
+  .text
+    color: #61638c
+    text-shadow: 0.6px 0.6px 1px #000000
+    text-align: center
+  .text
+    max-width: 40rem
+
+  @media screen and (min-width: 576px)
+    .jumboBtn
+      align-self: flex-end
+    .title,
+    .text
+      text-align: right
+
+.container-fluid
+    background-color: rgba(200, 200, 200, 0.2)
+
+.proud__title
+  margin 1rem auto
+
+.containerFlex
+  margin-bottom: 3rem
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  
+
+  .ourProud
+    padding: 0.5rem
+    margin: 0.5rem
+    background-color: #ffffff
+    border-radius: 3px
+    img
+      width: 100%
+    .title
+      margin: 0.5rem 0.2rem
+    .text
+      height 3rem
+      margin: 0.5rem 0.2rem
+      font-family Tahoma, Arial, sans-serif
+      font-size: 0.7rem
+      overflow: hidden
+
+// BEST PARTS //////////////////////////////
+
+.advantage
+  display: flex
+  margin-bottom 2rem
+  background-color: rgba(200, 200, 200, 0.2)
+  border-radius: 5px
+  box-shadow: 0px 2px 3px #000000
+
+  img
+    align-self: center
+    width 5rem
+    height 5rem
+    padding 0.5rem
+  
+  .info
+    flex-grow: 2
+    // width 15rem
+    // height 5rem
+    margin 0.7rem
+    padding 0.5rem
+    border: 1px solid #ffffff
+    border-radius: 5px
+    p
+      font-size 0.7rem
+      height: 1rem
+      overflow: hidden
+
+// FOOTER //////////////////////////////////
+
+.footer
+  height: 5rem
+  padding: 0.8rem
+  background-image: url(../img/wall.jpg)
+  background-size: cover  
+  .nav-link
+    color: #000000
+  .social
+    padding: 0.5rem 0.7rem
+  
+  @media screen and (max-width: 576px)
+    .social
+      display: none
+
+  @media screen and (max-width: 900px)
+    .social__item
+      width 1.4rem
+      height 1.4rem
+
+
+// GALLERY  //////////////////////////////////////////////////////////////////
+
+.main
+  height 25rem
+  margin 3rem 0
+  background-color: rgba(230, 230, 230, 0.2)
+  border-radius: 5px
+  overflow: hidden
+  h3 
+    margin 2rem 0 2rem 1rem
+  p 
+    padding: 0 1rem
+
+.aside
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin 3rem 0
+  border-radius: 5px
+  background-color: rgba(230, 230, 230, 0.2)
+  img
+    align-self: flex-end
+    max-width: 100%
+    margin-top 1rem
+    border-radius: 5px
+
+  .telephone
+    display: flex
+    align-items: center
+
+  .telephone:before
+    content: ''
+    display: block
+    width 1.5rem
+    height 1.5rem
+    margin-right 1rem
+    background-image: url(../img/001-mobile-phone.svg)
+  
+  .skype
+    display: flex
+    align-items: center
+  
+  .skype:before
+    content: ''
+    display: block
+    width 1.5rem
+    height 1.5rem
+    margin-right 1rem
+    background-image: url(../img/002-skype.svg)
+
+  .connect
+    display: flex
+    width 6rem
+    margin 0.8rem 0.3rem
+    justify-content: space-between
+    .cell
+      width 1.5rem
+      height 1.5rem
+    .whatsapp
+      background-image: url(../img/004-whatsapp.svg)
+    .viber
+      background-image: url(../img/005-viber.svg)
+    .messenger
+      background-image: url(../img/003-messenger.svg)
+  
+    
+    // LIGHTBOX ///////////////////////////////////////////////////
+
+.cont-light
+  a 
+    text-align: center
+
+.box
+  flex-grow: 2
+  width 15rem
+  height 10rem !important
+  margin 1rem
+  box-shadow: 0px 2px 3px #222222
+  
+
+  // CONTACTS /////////////////////////////////////////////////////
+
+  .contacts
+    .telephone
+      display: flex
+      align-items: center
+
+    .telephone:before
+      content: ''
+      display: block
+      width 1.5rem
+      height 1.5rem
+      margin-right 1rem
+      background-image: url(../img/001-mobile-phone.svg)
+  
+    .skype
+      display: flex
+      align-items: center
+  
+    .skype:before
+      content: ''
+      display: block
+      width 1.5rem
+      height 1.5rem
+      margin-right 1rem
+      background-image: url(../img/002-skype.svg)
+
+.img__map
+  max-width: 100%
+      
+
+

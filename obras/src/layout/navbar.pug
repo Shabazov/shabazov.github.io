@@ -1,0 +1,24 @@
+nav.navbar.navbar-expand-lg.navbar-light.bg-dark
+  a.navbar-brand(href="#")
+  button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+    span.navbar-toggler-icon
+  .collapse.navbar-collapse(id="navbarSupportedContent")
+    ul.navbar-nav.mr-auto.menu
+      li.nav-item.active
+        a.nav-link.text-light(href="main_role.html") Home
+        span.sr-only (Current)
+      li.nav-item(href="#")
+        a.nav-link.text-light(href="gallery.html") Gallery
+      li.nav-item.dropdown
+        a.nav-link.text-light.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") Contacts
+        .dropdown-menu.bg-dark(aria-labelledby="navbarDropdown")
+          a.dropdown-item.text-light(href="contacts.html") Contacts
+          .dropdown-divider
+          a.dropdown-item.text-light(href="map.html") Map
+    
+    ul.social
+      li.social__item.social__face: a.social__link
+      li.social__item.social__vk: a.social__link
+      li.social__item.social__twitter: a.social__link
+      li.social__item.social__insta: a.social__link
+      li.social__item.social__google: a.social__link
