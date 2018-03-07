@@ -1,0 +1,87 @@
+extends ../blocks/main
+
+block content
+  //- ul.rslides
+  //-   li: img(src="img/burger.jpg")
+  //-   li: img(src="img/img.jpg")
+  //-   li: img(src="img/chinese.jpg")
+  div(id="my-slide")
+    img(data-lazy-src="img/burger.jpg")
+    img(data-lazy-src="img/burger.jpg")
+    img(data-lazy-src="img/burger.jpg")
+  .banner(id="banner")
+    h1 Queso Víno y Jamón!
+    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magni recusandae incidunt qui ex sed amet totam omnis
+
+  section.main
+    h2 ~ dishes of the day ~
+    .dishes
+      .dishes__item
+        img.dishes__photo(src="img/food/grill-main.jpg")
+        .dimmer
+          a.dishes__link(href="#") biff stake
+            p.dishes__text lorem ipsum dolor sit amet.
+      .dishes__item
+        img.dishes__photo(src="img/food/beef.jpeg")
+        .dimmer
+          a.dishes__link(href="#") beef sallad
+            p.dishes__text lorem ipsum dolor sit amet.
+      .dishes__item
+        img.dishes__photo(src="img/food/burg.jpg")
+        .dimmer
+          a.dishes__link(href="#") burger
+            p.dishes__text lorem ipsum dolor sit amet.
+      .dishes__item
+        img.dishes__photo(src="img/food/fire.jpg")
+        .dimmer
+          a.dishes__link(href="#") grill menu
+            p.dishes__text lorem ipsum dolor sit amet.
+      .dishes__item
+        img.dishes__photo(src="img/food/lamb.jpg")
+        .dimmer
+          a.dishes__link(href="#") Lamb fillet
+            p.dishes__text lorem ipsum dolor sit amet.
+      .dishes__item
+        img.dishes__photo(src="img/food/pizza.jpg")
+        .dimmer
+          a.dishes__link(href="#") Pizza
+            p.dishes__text lorem ipsum dolor sit amet.
+      .dishes__item
+        img.dishes__photo(src="img/food/pork.jpg")
+        .dimmer
+          a.dishes__link(href="#") Pork fillet
+            p.dishes__text lorem ipsum dolor sit amet.
+      .dishes__item
+        img.dishes__photo(src="img/food/porkk.jpg")
+        .dimmer
+          a.dishes__link(href="#") Pork chop
+            p.dishes__text lorem ipsum dolor sit amet.
+      
+  
+  section.loved
+    h2 ~ most loved dishes ~
+    .dishes.dishes--loved
+      .dishes__item
+        img.dishes__photo(src="img/food/salmon.jpg")
+        .dimmer
+          a.dishes__link(href="#") Baked salmon
+            p.dishes__text lorem ipsum dolor sit amet.
+      .dishes__item
+        img.dishes__photo(src="img/food/shish.jpg")
+        .dimmer
+          a.dishes__link(href="#") kebab
+            p.dishes__text lorem ipsum dolor sit amet.
+      .dishes__item
+        img.dishes__photo(src="img/food/soup.jpg")
+        .dimmer
+          a.dishes__link(href="#") Creame soup
+            p.dishes__text lorem ipsum dolor sit amet.
+      .dishes__item
+        img.dishes__photo(src="img/food/spage.jpg")
+        .dimmer
+          a.dishes__link(href="#") Spagetti
+            p.dishes__text lorem ipsum dolor sit amet.
+      
+      
+
+    
