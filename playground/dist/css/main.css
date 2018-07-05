@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+}
+button {
+  display: block;
+  width: 10rem;
+  height: 3rem;
+  margin: 2rem auto;
+  background-color: #444;
+  outline: none;
+  color: #fff;
+  border-radius: 3px;
+  transition: color 0.5s ease-out;
+}
+button:hover {
+  color: #0af;
+}
+.power,
+.friend {
+  display: block;
+  width: 10rem;
+  height: 3rem;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #555;
+  border-radius: 3px;
+  outline: none;
+}
+.friend {
+  margin-top: 2rem;
+  background-color: #666;
+}

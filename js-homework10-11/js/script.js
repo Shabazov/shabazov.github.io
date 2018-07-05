@@ -10,14 +10,6 @@ $(function() {
     telephone: '717701079'
   };
 
-  // var html = $('#test').html();
-  // var data = {
-  //   title: 'Hello world'
-  // };
-  //
-  // var content = tmpl(html, data);
-  // $('body').append(content);
-
   var content = tmpl(template, data);
 
   $('body').append(content);

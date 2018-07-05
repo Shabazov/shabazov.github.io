@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/tmpl.js"></script>
-  <script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  <!-- <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+  </script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script> -->
   <script data-main="js/app" src="js/require.js"></script>
 
   <title>Document</title>
@@ -17,10 +18,14 @@
 <body>
   <script type="text/template" id="mainPart">
     <div class="wrapper">
-      <ul class="toDoList"></ul>
+      <ul class="toDoList">
+        <!-- <li> Learn Angular <button type="button" class="removeItem">Del</button></li>
+        <li> Learn JavaScript <button type="button" class="removeItem">Del</button></li>
+        <li> Learn React <button type="button" class="removeItem">Del</button></li> -->
+      </ul>
       <div class="controls">
         <input type="text" class="inpt" data-value="">
-        <button type="button" class="btn" name="">Add</button>
+        <button class="item-add" name="">Add</button>
       </div>
     </div>
   </script>

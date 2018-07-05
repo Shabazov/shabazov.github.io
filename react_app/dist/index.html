@@ -1,0 +1,99 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>react_app</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,700" rel="stylesheet">
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <h1 class="logo"><span>Dark</span> Material</h1>
+        <label for="menu-bar">
+          <div class="menu-bar"></div>
+          <input type="checkbox" id="menu-bar">
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Menu</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Booking</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contacts</a></li>
+          </ul>
+        </label>
+        <div class="jumbo-like">
+          <div class="slider-container">
+            <div class="mySlide">
+              <div class="overlay"></div>
+              <div class="text-slide">
+                <h2>Material Design</h2>
+                <p>Mobile First</p>
+              </div>
+            </div>
+            <picture class="mySlide">
+              <div class="overlay"></div>
+              <source media="(min-width: 900px)" srcset="../src/images/dark-big.jpg">
+              <source media="(min-width: 600px)" srcset="../src/images/dark-medium.png">
+              <source media="(min-width: 320px)" srcset="../src/images/dark-mob.png"><img src="../src/images/dark-big.jpg" alt="dark">
+            </picture>
+            <picture class="mySlide">
+              <div class="overlay"></div>
+              <source media="(min-width: 900px)" srcset="../src/images/dark-big.jpg">
+              <source media="(min-width: 600px)" srcset="../src/images/dark-medium.png">
+              <source media="(min-width: 320px)" srcset="../src/images/green-medium.jpg"><img src="../src/images/dark-big.jpg" alt="dark">
+            </picture>
+            <div class="controls"><span class="controls-button" onclick="currentSlide(0)"></span><span class="controls-button" onclick="currentSlide(1)"></span><span class="controls-button" onclick="currentSlide(2)"></span></div>
+            <script src="../src/js/script.js"></script>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="about-us">
+      <div class="wrapper">
+        <h2 class="about-us__title">about us</h2><span class="about-us__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,nisi illo! Laborum, illum eius aliquam assumenda illo magni aut possimus neque non dignissimos consequatur eaque dicta minus delectus maxime mollitia.</span>
+        <input class="about-us__button" type="button" value="read more.">
+      </div>
+    </section>
+    <section class="topProduct">
+      <div class="wrapper">
+        <h2 class="topProduct__title">top sales</h2>
+        <div class="products">
+          <div class="products__item" style="background-image: url('../src/images/1.jpeg')">
+            <div class="overlay"></div><span>macBook</span>
+          </div>
+          <div class="products__item" style="background-image: url('../src/images/2.jpg')">
+            <div class="overlay"></div><span>brains</span>
+          </div>
+          <div class="products__item" style="background-image: url('../src/images/3.jpg')">
+            <div class="overlay"></div><span class="otherSpan">beginners</span>
+          </div>
+          <div class="products__item" style="background-image: url('../src/images/4.jpg')">
+            <div class="overlay"></div><span>scheme</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="topProduct">
+      <div class="wrapper">
+        <h2 class="topProduct__title">New products</h2>
+        <div class="products">
+          <div class="products__item" style="background-image: url('../src/images/11.jpg')">
+            <div class="overlay"></div><span>Jordan</span>
+          </div>
+          <div class="products__item" style="background-image: url('../src/images/22.jpg')">
+            <div class="overlay"></div><span>Briant</span>
+          </div>
+          <div class="products__item" style="background-image: url('../src/images/33.png')">
+            <div class="overlay"></div><span class="otherSpan">Malone</span>
+          </div>
+          <div class="products__item" style="background-image: url('../src/images/44.jpg')">
+            <div class="overlay"></div><span>Iverson</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div id="root"></div>
+    </footer>
+  <script type="text/javascript" src="index.js"></script></body>
+</html>

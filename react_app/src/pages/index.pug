@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title react_app
+    link(href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,700" rel="stylesheet")
+  body
+    header.header
+      .wrapper
+        h1.logo <span>Dark</span> Material
+        label(for="menu-bar")
+          .menu-bar
+          input(type="checkbox", id="menu-bar")
+          ul.menu
+            li.menu__item: a.menu__link(href="#") Home
+            li.menu__item: a.menu__link(href="#") Menu
+            li.menu__item: a.menu__link(href="#") Booking
+            li.menu__item: a.menu__link(href="#") Contacts
+        .jumbo-like
+          .slider-container
+            .mySlide
+              .overlay
+              .text-slide
+                h2 Material Design
+                p Mobile First
+            //- picture.mySlide
+            //-   source(media="(min-width: 900px)", srcset="../src/images/green-big.png")
+            //-   source(media="(min-width: 600px)", srcset="../src/images/green-medium.jpg")
+            //-   source(media="(min-width: 320px)", srcset="../src/images/green-mob.jpg")
+            //-   img(src="../src/images/green-mob.jpg", alt="green")
+            picture.mySlide
+              .overlay
+              source(media="(min-width: 900px)", srcset="../src/images/dark-big.jpg")
+              source(media="(min-width: 600px)", srcset="../src/images/dark-medium.png")
+              source(media="(min-width: 320px)", srcset="../src/images/dark-mob.png")
+              img(src="../src/images/dark-big.jpg", alt="dark")
+            picture.mySlide
+              .overlay
+              source(media="(min-width: 900px)", srcset="../src/images/dark-big.jpg")
+              source(media="(min-width: 600px)", srcset="../src/images/dark-medium.png")
+              source(media="(min-width: 320px)", srcset="../src/images/green-medium.jpg")
+              img(src="../src/images/dark-big.jpg", alt="dark")
+            .controls
+              span.controls-button(onclick="currentSlide(0)")
+              span.controls-button(onclick="currentSlide(1)")
+              span.controls-button(onclick="currentSlide(2)")
+            script(src="../src/js/script.js")
+    section.about-us
+      .wrapper
+        h2.about-us__title about us
+        span.about-us__text Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore,nisi illo! Laborum, illum eius aliquam assumenda illo magni aut possimus neque non dignissimos consequatur eaque dicta minus delectus maxime mollitia.
+        input.about-us__button(type="button", value="read more.")
+
+    section.topProduct
+      .wrapper
+        h2.topProduct__title top sales
+        .products
+          .products__item(style="background-image: url('../src/images/1.jpeg')")
+            .overlay
+            span macBook
+          .products__item(style="background-image: url('../src/images/2.jpg')")
+            .overlay
+            span brains
+          .products__item(style="background-image: url('../src/images/3.jpg')")
+            .overlay
+            span.otherSpan beginners
+          .products__item(style="background-image: url('../src/images/4.jpg')")
+            .overlay
+            span scheme
+    
+    section.topProduct
+      .wrapper
+        h2.topProduct__title New products
+        .products
+          .products__item(style="background-image: url('../src/images/11.jpg')")
+            .overlay
+            span Jordan
+          .products__item(style="background-image: url('../src/images/22.jpg')")
+            .overlay
+            span Briant
+          .products__item(style="background-image: url('../src/images/33.png')")
+            .overlay
+            span.otherSpan Malone
+          .products__item(style="background-image: url('../src/images/44.jpg')")
+            .overlay
+            span Iverson
+
+
+    footer.footer
+      div(id="root")

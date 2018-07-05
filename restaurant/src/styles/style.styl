@@ -1,0 +1,690 @@
+@require 'var.styl'
+
+*
+  margin 0
+  padding 0
+  text-decoration: none
+  box-sizing: border-box
+
+body
+  font-family Roboto, Arial
+
+.banner
+  width 100%
+  position: absolute
+  top -20rem
+  font-family: 'Lobster'
+  z-index: 100
+  h1
+    color #eeeeee
+    font-size 5rem
+    text-align: center
+  p
+    padding 3rem 5rem 
+    color #dddddd
+    font-size 2rem
+    text-align: center
+
+
+
+@media screen and (max-width: 576px)
+  body
+    background-color: bg_color
+
+    .banner
+      h1
+        font-size 2rem
+      p
+        font-size 1rem
+        padding 0.5rem 1rem
+  
+    header
+      position fixed
+      top 0
+      width: 100%
+      height 4rem
+      background-color: rgba(0, 0, 0, 0.5)
+      border-bottom: 1px solid #ffffff
+      z-index: 100
+
+      .logo
+        margin 0.5rem 1rem
+        display: inline-block
+        color text
+        text-decoration: none
+        h3
+          font-family 'Great Vibes', cursive
+          font-size 1.5rem
+
+      nav
+        width 100%
+        height 3rem
+
+        .menu
+          width 100%
+          display: none
+          position: absolute
+          top 4rem
+          list-style: none
+          z-index: 100
+      
+      .menu-mobile
+        position absolute
+        top 0.5rem
+        right 0.5rem
+        content:"";
+        width:  2rem
+        height: 0.3rem
+        margin 0.5rem
+        border-bottom: 15px double #f8f8f8; 
+        border-top: 5px solid #f8f8f8; 
+
+      input
+        width 3rem
+        height 3rem
+
+      .menu__item
+        border-bottom 1px solid #ffffff
+        background-color: rgba(0, 0, 0, 0.7)
+
+      .menu__link
+        padding 1rem
+        display: block
+        color text
+        text-align: center
+
+      .menu__link:hover
+        color textHover
+        text-shadow: 0px 1px 2px #ffffff
+      
+      input[type="checkbox"]
+        display: none
+
+      input[type="checkbox"]:checked ~ #menu
+        display: block
+        animation: showUp 0.3s linear
+        @keyframes showUp 
+          0%
+            opacity: 0
+          100%
+            opacity: 1
+
+   
+    .main
+      margin: 2rem auto -1rem
+      padding-bottom 3rem
+      background: -moz-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(250,250,250,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(51,51,51,1) 0%,rgba(250,250,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(51,51,51,1) 0%,rgba(250,250,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      h2
+        text-align: center
+        margin-top: 1rem
+        color: #dddddd
+        font-family 'Amatic SC'
+        font-size 3rem
+
+      .dishes
+        display: flex
+        flex-wrap: wrap
+        width 100%
+
+        .dishes__item
+          position relative
+          width 80%
+          height: 15rem
+          margin 0.8rem auto
+          background-color: #555555
+          overflow hidden
+          box-shadow: 1px 1px 5px #222
+          img
+            width 100%
+            height 100%
+        .dishes__item:hover img
+            transform: scale(1.2)
+            transition: transform 0.5s ease
+
+          .dimmer
+            display flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+            background-color: rgba(0, 0, 0, 0.3)
+
+            .dishes__link
+              text-align: center
+              font-family 'Lobster'
+              font-size 3rem
+              color #ffffff
+            .dishes__text
+              color #ffffff
+              font-family 'Amatic SC'
+              font-size 2rem
+    
+  .loved
+    background-color: #965f1b
+    padding 2rem 0 3rem
+    h2
+      text-align: center
+      margin-top: 1rem
+      color: #dddddd
+      font-family 'Amatic SC'
+      font-size 3rem
+    .dishes
+        display: flex
+        flex-wrap: wrap
+        width 100%
+
+        .dishes__item
+          position relative
+          width 80%
+          height: 15rem
+          margin 0.8rem auto
+          background-color: #555555
+          overflow hidden
+          box-shadow: 2px 3px 5px #222
+          border 5px double #000000
+          img
+            width 100%
+            height 100%
+        .dishes__item:hover img
+            transform: scale(1.2)
+            transition: transform 0.5s ease
+
+          .dimmer
+            display flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+            background-color: rgba(0, 0, 0, 0.3)
+
+            .dishes__link
+              text-align: center
+              font-family 'Lobster'
+              font-size 3rem
+              color #ffffff
+            .dishes__text
+              color #ffffff
+              font-family 'Amatic SC'
+              font-size 2rem
+
+  form
+    width 100%
+    padding 1rem 0rem
+    background-color: #dddddd
+    h2
+      display: block
+      text-align: center
+      font-family: 'Lobster'
+      font-size 2rem
+      color oorange
+    label
+      padding-left: 1rem
+      font-family: 'Lobster'
+      font-size 1.3rem
+      color oorange
+    input[type="text"]
+      display: block
+      width 80%
+      margin 1rem auto
+      padding 1rem
+      font-family: 'Roboto'
+      font-size 1rem
+    input:focus
+      outline: none
+    input[type="submit"]
+      display: block
+      width 10rem
+      height 2rem
+      margin 1rem auto 0rem
+      background-color: oorange
+      border-radius: 3px
+      font-family: 'Lobster'
+      font-size 1rem
+      color #dddddd
+  .logo__name
+    display: none
+
+
+
+@media screen and (min-width: 577px)
+  body
+      background-color: bg_color
+
+    .banner
+      h1
+        font-size 3rem
+      p
+        font-size 1.5rem
+        padding 1rem
+
+    header
+      position fixed
+      top 0
+      width: 100%
+      height 4rem
+      background-color: rgba(0, 0, 0, 0.5)
+      border-bottom: 1px solid #ffffff
+      z-index: 100
+
+      .logo
+        margin 0.5rem 1rem
+        display: inline-block
+        color text
+        text-decoration: none
+        h3
+          font-family 'Great Vibes', cursive
+          font-size 2.6rem
+
+      nav
+        width 100%
+        height 3rem
+
+        .menu
+          width 100%
+          display: none
+          position: absolute
+          top 4rem
+          list-style: none
+          z-index: 100
+      
+      .menu-mobile
+        position absolute
+        top 0.5rem
+        right 0.5rem
+        content:"";
+        width:  2rem
+        height: 0.3rem
+        margin 0.5rem
+        border-bottom: 15px double #f8f8f8; 
+        border-top: 5px solid #f8f8f8; 
+
+      input
+        width 3rem
+        height 3rem
+
+      .menu__item
+        border-bottom 1px solid #ffffff
+        background-color: rgba(0, 0, 0, 0.7)
+
+      .menu__link
+        padding 1rem
+        display: block
+        color text
+        text-align: center
+
+      .menu__link:hover
+        color textHover
+        text-shadow: 0px 1px 2px #ffffff
+      
+      input[type="checkbox"]
+        display: none
+
+      input[type="checkbox"]:checked ~ #menu
+        display: block
+        animation: showUp 0.3s linear
+        @keyframes showUp 
+          0%
+            opacity: 0
+          100%
+            opacity: 1
+
+    .main
+      margin: 2rem auto -1rem
+      padding-bottom 3rem
+      background: -moz-linear-gradient(top, rgba(51,51,51,1) 0%, rgba(250,250,250,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(51,51,51,1) 0%,rgba(250,250,250,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(51,51,51,1) 0%,rgba(250,250,250,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      h2
+        text-align: center
+        margin-top: 1rem
+        color: #dddddd
+        font-family 'Amatic SC'
+        font-size 3rem
+
+      .dishes
+        display: flex
+        flex-wrap: wrap
+        width 100%
+
+        .dishes__item
+          position relative
+          width 45%
+          height: 12rem
+          margin 0.8rem auto
+          background-color: #555555
+          overflow hidden
+          box-shadow: 1px 1px 5px #222
+          img
+            width 100%
+            height 100%
+        .dishes__item:hover img
+            transform: scale(1.2)
+            transition: transform 0.5s ease
+
+          .dimmer
+            display flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+            background-color: rgba(0, 0, 0, 0.3)
+
+            .dishes__link
+              text-align: center
+              font-family 'Lobster'
+              font-size 3rem
+              color #ffffff
+            .dishes__text
+              color #ffffff
+              font-family 'Amatic SC'
+              font-size 2rem
+
+    .loved
+      background-color: oorange
+      padding 2rem 0 3rem
+      h2
+        text-align: center
+        margin-top: 1rem
+        color: #dddddd
+        font-family 'Amatic SC'
+        font-size 3rem
+      .dishes
+        display: flex
+        flex-wrap: wrap
+        width 100%
+
+        .dishes__item
+          position relative
+          width 45%
+          height: 12rem
+          margin 0.8rem auto
+          background-color: #555555
+          overflow hidden
+          box-shadow: 2px 3px 5px #222
+          border 5px double #000000
+          img
+            width 100%
+            height 100%
+        .dishes__item:hover img
+            transform: scale(1.2)
+            transition: transform 0.5s ease
+
+          .dimmer
+            display flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top 0
+            left 0
+            width 100%
+            height 100%
+            background-color: rgba(0, 0, 0, 0.3)
+
+            .dishes__link
+              text-align: center
+              font-family 'Lobster'
+              font-size 3rem
+              color #ffffff
+            .dishes__text
+              color #ffffff
+              font-family 'Amatic SC'
+              font-size 2rem
+
+  form
+    width 100%
+    padding 1rem 0rem
+    background-color: #dddddd
+    h2
+      display: block
+      text-align: center
+      font-family: 'Lobster'
+      font-size 2rem
+      color oorange
+    label
+      padding-left: 1rem
+      font-family: 'Lobster'
+      font-size 1.3rem
+      color oorange
+    input[type="text"]
+      display: block
+      width 80%
+      margin 1rem auto
+      padding 1rem
+      font-family: 'Roboto'
+      font-size 1rem
+    input:focus
+      outline: none
+    input[type="submit"]
+      display: block
+      width 10rem
+      height 2rem
+      margin 1rem auto 0rem
+      background-color: oorange
+      border-radius: 3px
+      font-family: 'Lobster'
+      font-size 1rem
+      color #dddddd
+  .logo__name
+    display: none
+
+
+    // FOOTER /////////////////////////////////////////////
+
+.footer
+  width 100%
+  font-family 'Amatic SC'
+
+  .copyrights
+    width 100%
+    margin 2rem 0rem
+    text-align: center
+
+    a
+      padding-right: 0.5rem
+      text-decoration none
+      color textHover
+
+    p
+      display inline
+      color text
+
+    p:after
+      padding-left: 0.3rem
+      content: "\00a9"
+
+@media screen and (min-width: 1024px)
+
+    .banner
+      h1
+        font-size 4rem
+      p
+        font-size 2rem
+        padding 1rem 3rem
+
+    header
+      .menu-mobile
+        display: none
+      #menu
+        display: flex
+        justify-content: space-between
+        width 65%
+        position: absolute
+        top 0
+        right 0
+        .menu__item
+          background: none 
+          border: none
+        .menu__link
+          font-family: 'Amatic SC'
+          font-size 1.5rem
+          &:hover
+            font-size 1.6rem
+            transition: font-size 0.3s ease
+    
+    .dishes__item
+      width: 23% !important
+      height 10rem !important
+    
+    form
+      .container
+        position relative
+        .form__block
+          width 50%
+      .logo__name
+        display: block
+        position: absolute
+        top 4rem
+        right 8rem
+        transform: rotate(-10deg)
+        h1
+          display: block
+          width 21rem
+          color #ffffff
+          font-family: 'Lobster'
+          font-size 8rem
+          line-height: 5rem
+          text-shadow: 1px 2px 2px #000000
+
+// MENU ////////////////////////////////////////////////////////////////////
+
+.title
+  width 100%
+  height 15rem
+  background-image: url(../img/menu.jpg)
+  background-size: cover
+  background-position: 20% 0
+  .title__title
+    color rgba(250, 250, 250, 0.9)
+    text-align: center
+    line-height: 18rem
+    font-family: 'Lobster'
+    font-size 3.5rem
+
+.menu-card
+  width 100%
+  padding: 5rem 0rem
+  display: flex
+  flex-wrap: wrap
+  background-color: #ffffff
+  border: 1px solid #000000
+  .card__item
+    display flex
+    width 80%
+    height 9rem
+    margin 0.3rem auto
+    background-color: #eeeeee
+    border 1px solid #bbbbbb
+    overflow hidden
+    &:hover img
+      transform: scale(1.2)
+      transition: transform 0.5s ease
+    @media screen and (min-width: 576px)
+      width 49%
+      height 7rem
+      border-right: none
+    @media screen and (min-width: 850px)
+      width 33.3333%
+      height 7rem
+      border-right: none
+    @media screen and (min-width: 1024px)
+      width 25%
+      height 7rem
+      border-right: none
+    .dish__info
+      position relative
+      width 50%
+      padding 0.5rem
+      font-family: 'Roboto'
+      z-index: 10
+      h4
+        text-align: center
+        padding 0.2rem
+        text-shadow 0px 1px 1px #555555
+      p
+        display: block
+        width 90%
+        height 2.8rem
+        padding 0.5rem 0rem 0rem 1rem
+        font-size 0.9rem
+        overflow hidden
+      span 
+        display: block
+        padding-top 0.5rem
+        text-align: center
+        text-shadow: 0px 1px 1px oorange
+    .dish__info:after
+      content: ''
+      display: block
+      width 1.5rem
+      height 1.5rem
+      background-color: #eeeeee
+      position: absolute
+      top 2.7rem
+      right -0.7rem
+      transform: rotate(45deg)
+    .dish__img
+      width 50%
+      height 100%
+      overflow hidden
+      img
+        width 100%
+        height 100%
+        
+      
+      // BOOKING ///////////////////////////////////////////////////////
+
+.booking__img
+  width 100%
+  height 15rem
+  background-image: url(../img/book-a-table.jpg)
+  background-size: cover
+  background-position: 20% 60%
+  border-bottom: 2px solid #000000
+  @media screen and (max-width: 1023px)
+    height 15rem
+
+
+// CONTACTS ///////////////////////////////////////////////////////////
+
+.contacts
+  width 50%
+  margin 5rem auto
+  padding 5rem 0rem
+  @media screen and (max-width: 576px)
+    width 100%
+    height 100%
+    margin 0rem auto
+  h3
+    padding: 1rem
+    text-align: center
+    font-family: 'Great Vibes'
+    font-size 3rem
+    color #eeeeee
+    letter-spacing: 2px
+  span 
+    display block
+    padding 2rem 0rem 0rem
+    text-align: center
+    font-family: 'Arial'
+    font-size 1.5rem
+    color #eeeeee
+    text-shadow: 0px 1px 0px #000000
+  .contacts__icons
+    display: flex
+    width 17rem
+    margin 2rem auto
+    img
+      width 2.5rem
+      height 2.5rem
+      margin 0 auto

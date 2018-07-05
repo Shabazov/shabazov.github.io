@@ -12,7 +12,7 @@ define(
           }
           self.data.push(item);
           return self.data;
-        }
+        };
 
         self.removeItem = function(item) {
           let index = self.data.indexOf(item);
@@ -21,13 +21,8 @@ define(
           }
           self.data.splice(index, 1);
           return self.data;
-        }
+        };
       }
-
-
-    return {
-
-
+      return Model;
     }
-  }
-);
+  );

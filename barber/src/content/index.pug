@@ -1,0 +1,131 @@
+extends ./main
+
+block content
+  header.header
+
+  section.cita
+    .cita__wrapper
+      h1 Julen Barbershop
+      input.pedir(type="button", value="cita")
+      .modal
+        h2 Pedir cita
+        form(action="#")
+          input.name(type="text" id="name" placeholder="name" required)
+          input.date(type="date" required)
+          input.time(type="time" required)
+          input.button(type="submit", value="Ya!")
+
+
+  
+  section.barbers
+    .barber
+      h2 José Gonsalez
+      p Lorem ipsum, dolor sit amet
+      img(src="images/barber1.jpg", alt="photo")
+    .barber
+      h2 Lee Chan
+      p Lorem ipsum, dolor sit amet
+      img(src="images/barber2.jpg", alt="photo")
+    .barber
+      h2 Richi Edwards
+      p Lorem ipsum, dolor sit amet
+      img(src="images/barber3.jpg", alt="photo")
+
+  section.gallery
+    h1 	&#8226; gallería &#8226;
+    .container
+
+      a.myModal(href="images/layout/1.png" data-lightbox="image-1")
+        //- .modal
+        //-   span.close &times;	
+        //-   img(src="images/layout/1.png" alt="large")
+        //-   span.date 13.11.1985
+        .gallery__item(style="background-image: url('images/layout/1.png')")
+          span 13.11.85
+
+      a.myModal(href="images/layout/2.jpg" data-lightbox="image-2")
+        //- .modal
+        //-   span.close &times;	
+        //-   img(src="images/layout/2.jpg" alt="large")
+        //-   span.date 1.11.2017
+        .gallery__item(style="background-image: url('images/layout/2.jpg')")
+          span 1.11.2017
+
+      a.myModal(href="images/layout/3.jpg" data-lightbox="image-3")
+        //- .modal
+        //-   span.close &times;	
+        //-   img(src="images/layout/3.jpg" alt="large")
+        //-   span.date 12.01.2018
+        .gallery__item(style="background-image: url('images/layout/3.jpg')")
+          span 12.01.2018
+      a.myModal(href="images/layout/4.jpg" data-lightbox="image-4")
+        //- .modal
+        //-   span.close &times;	
+        //-   img(src="img/layout/4.jpg" alt="large")
+        //-   span.date 5.02.2018
+        .gallery__item(style="background-image: url('images/layout/4.jpg')")
+          span 5.02.2018
+      a.myModal(href="images/layout/5.jpg" data-lightbox="image-5")
+        //- .modal
+        //-   span.close &times;	
+        //-   img(src="img/layout/5.jpg" alt="large")
+        //-   span.date 27.02.2018
+        .gallery__item(style="background-image: url('images/layout/5.jpg')")
+          span 27.02.2018
+      a.myModal(href="images/layout/6.jpg" data-lightbox="image-6")
+        //- .modal
+        //-   span.close &times;	
+        //-   img(src="img/layout/6.jpg" alt="large")
+        //-   span.date 3.03.2018
+        .gallery__item(style="background-image: url('images/layout/6.jpg')")
+          span 3.03.2018
+      a.myModal(href="images/layout/7.jpg" data-lightbox="image-7")
+        //- .modal
+        //-   span.close &times;	
+        //-   img(src="img/layout/7.jpg" alt="large")
+        //-   span.date 15.04.2018
+        .gallery__item(style="background-image: url('images/layout/7.jpg')")
+          span 15.04.2018
+      a.myModal(href="images/layout/8.jpg" data-lightbox="image-8")
+        //- .modal
+        //-   span.close &times;	
+        //-   img(src="img/layout/8.jpg" alt="large")
+        //-   span.date 21.04.2018
+        .gallery__item(style="background-image: url('images/layout/8.jpg')")
+          span 21.04.2018
+      a.myModal(href="images/layout/9.jpg" data-lightbox="image-9")
+        //- .modal
+        //-   span.close &times;	
+        //-   img(src="img/layout/9.jpg" alt="large")
+        //-   span.date 30.04.2018
+        .gallery__item(style="background-image: url('images/layout/9.jpg')")
+          span 30.04.2018
+  
+  section.news(id="myApp")
+  
+    .news__item
+      h3.title Latest News
+      .img__wrapper
+        img(src="images/layout/2.jpg")
+      p.article Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet facere doloremque voluptas porro, provident, neque illum, error maiores consectetur quam ab magnam odit eligendi quas eveniet minus deleniti nemo!
+      a.more(href="#") read more...
+
+    .news__item
+      h3.title Latest News
+      .img__wrapper
+        img(src="images/layout/3.jpg")
+      p.article Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet facere doloremque voluptas porro, provident, neque illum, error maiores consectetur quam ab magnam odit eligendi quas eveniet minus deleniti nemo!
+      a.more(href="#") read more...
+    .news__item
+      h3.title Latest News
+      .img__wrapper
+        img(src="images/layout/4.jpg")
+      p.article Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda amet facere doloremque voluptas porro, provident, neque illum, error maiores consectetur quam ab magnam odit eligendi quas eveniet minus deleniti nemo!
+      a.more(href="#") read more...
+  footer.footer
+    .quote
+      p.text "Beware of the young doctor and the old barber"
+      p.author Benjamin Franklin
+  
+  script(src="js/script.js")
+  script(src="js/lightbox.js")
