@@ -28,8 +28,6 @@
   font-size: 20px;
 }
 .header .info p {
-  display: block;
-  width: 420px;
   font-size: 11px;
 }
 .header .icons {
@@ -201,6 +199,9 @@
 @media only screen and (min-width: 480px) {
   .wrapper {
     max-width: 576px;
+  }
+  .header .info p {
+    width: 420px;
   }
   .liked .callMe {
     flex-direction: row;
@@ -574,21 +575,21 @@
 }
 @font-face {
   font-family: 'intro';
-  src: url("../../dist/fonts/intro.ttf");
+  src: url("../../src/fonts/intro.ttf");
 }
 @font-face {
   font-family: 'roboto';
-  src: url("../../dist/fonts/Roboto-Regular.ttf");
+  src: url("../../src/fonts/Roboto-Regular.ttf");
 }
 @font-face {
   font-family: 'roboto';
   font-weight: 100;
-  src: url("../../dist/fonts/Roboto-Thin.ttf");
+  src: url("../../src/fonts/Roboto-Thin.ttf");
 }
 @font-face {
   font-family: 'roboto';
   font-weight: bold;
-  src: url("../../dist/fonts/Roboto-Bold.ttf");
+  src: url("../../src/fonts/Roboto-Bold.ttf");
 }
 * {
   margin: 0;
