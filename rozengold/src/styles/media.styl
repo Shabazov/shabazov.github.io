@@ -1,0 +1,530 @@
+
+
+
+/* Custom, iPhone Retina */
+  @media only screen and (min-width : 320px)
+	  .wrapper
+      max-width 479px
+
+    .overlay
+      height 300px
+
+    .overlay2
+      height 100%
+
+
+////////////////////////////////// SECTION HEADER
+
+    .header
+      height 300px
+
+      .topFigure
+        width 200px
+        height 20px 
+
+      .logo
+        margin 30px 0 30px
+        width 220px
+        img 
+          width 100%
+      
+      .info
+        h3
+          margin-bottom 8px
+          font-size 20px
+        p
+          display block
+          width 420px
+          font-size 11px
+      
+      .icons
+        width 260px
+        margin 20px 0
+        .icon
+          max-width 45px
+
+      .consultant
+        .consult
+          width 50px
+          margin -2px auto 0
+        img
+          width 50px
+        .buttons
+          width 300px
+          margin -20px auto 0
+          input
+            width 100px
+            margin 0 5px
+            padding 2px 5px
+            border-radius 15px
+            font-size 10px
+
+////////////////////////////////// SECTION COMPROMISE
+
+    .compromise
+      margin-top 50px
+      background-image url(../../src/images/compromise.jpg)
+      background-position 50% 0
+      background-size cover
+      background-attachment fixed
+
+      .title
+        margin-bottom 15px
+        padding-top 20px
+        font-size 16px
+      .goods__info
+        .text
+          padding 8px 0 8px 25px
+          font-size 12px
+          &:before
+            top 7px
+            left 8px
+      .goods__image
+        display none
+
+////////////////////////////////// SECTION LEARNMORE
+
+
+    .learnMore
+      margin 20px 0
+      h2
+        margin 5px 0
+        font-size 16px
+      p
+        margin 15px 3px
+        font-size 12px
+    .callMe
+      margin 10px
+    .cellPhone
+      padding 3px 10px
+      width 200px
+      height 30px
+      border-radius 25px
+      font-size 16px
+    .cellPhone::placeholder
+      padding 3px 10px
+      font-size 14px
+    .submitBtn
+      margin 10px 0
+      padding 3px 10px
+      border-radius 20px
+
+//////////////////////////////////////// SLIDER
+
+.slider
+  .slider-container
+    .mySlide
+      flex-direction column
+      img
+        width 100%
+
+////////////////////////////////////////  LIKED
+
+
+    .liked
+      h2
+        margin 20px 5px 10px
+        font-size 16px
+      p
+        margin 15px 5px
+        font-size 12px
+      input
+        margin 5px 0
+      .callMe
+        flex-direction column
+
+    .map
+      height 200px
+      margin 20px 0
+
+    .residense
+      padding 20px 0 0
+      text-align center
+      h2
+        margin 20px 5px 10px
+        font-size 16px
+        &:before
+          width 40px
+          height 25px
+          top -35px
+          left 10px
+      h3
+        font-size 14px
+      .icons
+        margin 20px 0
+        padding 10px 20px
+        font-size 11px
+        .icon__item
+          width 70px
+
+    .manual
+      .manualWrapper
+        margin 0
+        padding 10px 5px 10px 10px
+        text-align center
+        h3
+          padding 5px
+          font-size 16px
+          &:before
+            width 60px
+            height 90px
+            top 61px
+            left 30px
+        .callMe
+          padding-left 80px
+          .cellPhone
+            height 25px
+            margin 5px 0
+        .submitBtn
+          width 170px
+          margin 20px auto
+
+    .footer
+      .footerWrapper
+        height 70px
+        .logo
+          width 90px
+          height 20px
+        .copyRight
+          font-size 8px
+        .contactsWrapper
+          font-size 8px
+        
+
+
+
+/* Extra Small Devices, Phones */
+  @media only screen and (min-width : 480px)
+    .wrapper
+      max-width 576px
+
+    .liked
+      .callMe
+        flex-direction row
+        justify-content space-around
+        .cellPhone
+          padding 3px 10px
+          width 130px
+          height 20px
+
+    .map
+      height 250px
+
+    .residense
+      h2
+        margin 20px 30px 10px
+        font-size 18px
+      h3
+        font-size 17px
+      .icons
+        margin 20px 30px
+        padding 10px 20px
+        font-size 13px
+        .icon__item
+          width 70px
+    
+    .manual
+      .manualWrapper
+        padding 10px 5px 10px 10px
+        text-align left
+        h3
+          font-size 16px
+          padding-left 80px
+          &:before
+            width 70px
+            height 120px
+            top 20px
+            left 0px
+        .callMe
+          flex-direction row
+          justify-content space-around
+          .cellPhone
+            width 200px
+            height 25px
+            margin 5px
+
+
+/* Extra Small Devices, Phones */
+  @media only screen and (min-width : 576px)
+    .wrapper
+      max-width 767px
+
+    .icons
+      margin 20px 0
+
+    .consultant
+      .consult
+        width 70px
+        margin 6px auto 0
+        img
+          width 100%
+        .buttons
+          margin -25px auto 0
+
+    //////////////////////////////////////////////// COMPROMISE
+    
+    .compromise
+      margin-top 50px
+      background-image none
+      .overlay2
+        display none
+      .wrapper
+        .title
+          margin-bottom 15px
+          padding-top 20px
+          font-size 16px
+        .goods
+          .goods__info
+            width 50%
+            padding 20px 5px 10px 50px
+          .text
+            padding 8px 5px 8px 25px
+            font-size 11px
+          .goods__image
+            display flex
+            width 50%
+            img
+              width 100%
+              height 100%
+
+    ////////////////////////////////////////////////  SLIDER
+
+    .slider
+      padding 30px 10px
+      .slider-container
+        display flex
+        flex-direction row
+        .mySlide
+          flex-direction row
+          align-items center
+          position relative
+          width 100%
+          animation changeImage .3s ease
+          @keyframes changeImage 
+            0%
+              opacity 0
+            100%
+              opacity 1
+          img
+            width 50%
+          p
+            padding 10px
+            font-family 'roboto'
+            font-weight 100
+            font-size 13px
+            line-height 17px
+
+
+    .residense
+      text-align left
+      h2,
+      h3
+        margin 20px 50px 30px
+      .icons
+        padding 0 50px
+        .icon__item
+          width 120px
+          img
+            width 50%
+
+    .manual
+      .manualWrapper
+        padding 10px 5px 10px 10px
+        text-align left
+        h3
+          padding-left 80px
+          &:before
+            width 83px
+            height 130px
+            top 20px
+            left -35px
+
+
+ 
+    
+
+
+/* Small Devices, Tablets */
+  @media only screen and (min-width : 768px)
+    .wrapper
+      max-width 991px
+
+    .header
+      margin-bottom 80px
+
+      .logo
+        margin 50px 0 10px
+        width 220px
+
+      .consultant
+        .consult
+          width 100px
+          margin -25px auto 0
+          img
+            width 100%
+        .buttons
+          width 400px
+          margin -45px auto 0
+
+    .compromise
+      .wrapper
+        .goods__info
+          .text
+            padding 11px 0 11px 25px
+            font-size 12px
+            &:before
+              top 10px
+              left 8px
+
+    .liked
+      .callMe
+        .cellPhone
+          padding 5px 10px
+          width 200px
+          height 30px
+
+    .map
+      height 400px
+
+    .residense
+      .wrapper
+        h2
+          width 400px
+          &:before
+            top -30px
+            left 0
+        .icons
+          margin-bottom 40px
+          .icon__item
+            width 150px
+            img
+              width 50%
+
+    .manual
+      .manualWrapper
+        margin 0
+        padding 10px 5px 10px 10px
+        text-align left
+        h3
+          font-size 16px
+          padding-left 150px
+          &:before
+            width 100px
+            height 150px
+            top 0
+            left 0
+        .callMe
+          flex-direction row
+          width 450px
+          margin 0 auto
+          padding 0
+          .cellPhone
+            width 200px
+            height 25px
+
+
+
+
+
+
+/* Medium Devices, Desktops */
+  @media only screen and (min-width : 992px)
+    .wrapper
+      max-width 1199px
+
+    .header
+      margin-bottom 80px
+      height 360px
+      .overlay
+        height 360px
+
+      .logo
+        margin 50px 0 30px
+
+      .consultant
+        .consult
+          margin 15px auto 0
+          img
+            width 100%
+        .buttons
+          margin -40px auto 0
+
+    .compromise
+      .wrapper
+        .goods
+          .goods__info
+            padding-left 100px
+            .text
+              padding 11px 0 11px 25px
+              font-size 12px
+              &:before
+                top 10px
+                left 8px
+
+    .residense
+      padding 20px 50px
+      .manual
+        .manualWrapper
+          padding 10px 5px 10px 10px
+          text-align left
+          h3
+            font-size 16px
+            padding-left 150px
+            &:before
+              width 100px
+              height 150px
+              top 0
+              left 0
+          .callMe
+            flex-direction row
+            width 450px
+            margin 0 auto
+            padding 0
+            .cellPhone
+              width 200px
+              height 25px
+
+/* Large Devices, Wide Screens */
+  @media only screen and (min-width : 1200px)
+    .wrapper
+      max-width 1200px
+
+    .header
+      // background-attachment fixed
+      margin-bottom 80px
+      height 420px
+      .overlay
+        width 100%
+        height 420px
+
+      .logo
+        width 300px
+        margin 50px 0 30px
+      .info
+        h3
+          font-size 2rem
+        p
+          width 600px
+          font-size 1rem
+      .icons
+        margin 32px auto
+
+      .consultant
+        .consult
+          margin 15px auto 0
+          img
+            width 100%
+        .buttons
+          margin -40px auto 0
+
+    .map
+      height 500px
+
+    .residense
+      padding 20px 100px
+
+    .footer
+      .wrapper
+        .footerWrapper
+          justify-content space-between
+          padding 10px 50px

@@ -1,0 +1,324 @@
+@require 'media.styl'
+
+@font-face
+  font-family Intro
+  src url(../../src/fonts/intro.otf)
+
+@font-face
+  font-family 'roboto'
+  src url(../../src/fonts/Roboto-Regular.ttf)
+
+@font-face
+  font-family 'roboto'
+  font-weight 100
+  src url(../../src/fonts/Roboto-Thin.ttf)
+
+@font-face
+  font-family 'roboto'
+  font-weight bold
+  src url(../../src/fonts/Roboto-Bold.ttf)
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  text-decoration none
+
+//////////////////////////////////////// VARIABLES
+
+rojo = #ff2880
+amarillo = #ffd100
+gris = #ebedee
+
+//////////////////////////////////////// OTHER
+
+input:active, input:focus
+    outline none !important
+    box-shadow none
+
+
+input, textarea
+  -webkit-appearance none
+  -webkit-border-radius 0
+
+.wrapper
+  margin 0 auto
+  position relative
+
+.overlay, 
+.overlay2
+  position absolute
+  top 0
+  left 0
+  bottom 0
+  right 0
+  background-color rgba(0, 0, 0, .4)
+
+.overlay2
+  background-color rgba(200, 200, 200, .7)
+
+//////////////////////////////////////// HEADER
+
+
+.header
+  width 100%
+  background-image url(../../src/images/header.jpg)
+  background-position 50% 80%
+  background-size cover
+
+  .content
+    position relative
+    display flex
+    flex-direction column
+    align-items center
+    z-index 10
+
+    .topFigure
+      background-image url(../../src/images/figure.png)
+      background-position 50% 0
+      background-size cover
+      font-family 'roboto', Arial, sans-serif
+      font-size 8px
+      line-height 20px
+      text-align center
+      color #ffffff
+    
+    .info
+      text-align center
+      font-family 'Intro'
+      color #ffffff
+
+    .icons
+      display flex
+      justify-content space-between
+      font-family 'roboto'
+      font-size 8px
+      text-align center
+      .icon
+        color #ffffff
+      
+    .consultant
+      .buttons
+        display flex
+        justify-content space-between
+        input
+          background-color amarillo
+          border none
+          outline none
+          font-family 'roboto'
+          cursor pointer
+          &:hover
+            background-color rojo
+            color #ffffff
+
+//////////////////////////////////////// COMPROMISE
+
+.compromise
+  width 100%
+  background-color gris
+  
+  .title
+    position relative
+    font-family 'Intro', Arial, sans-serif
+    text-align center
+    z-index 10
+
+  .goods
+    display flex
+    align-items center
+    .goods__info
+      .text
+        position relative
+        font-family 'roboto', Arial, sans-serif
+        letter-spacing .5px
+        z-index 1
+        &:before
+          content ''
+          display block
+          width 12px
+          height 14px
+          background-image url(../../src/images/arrow.png)
+          background-position 50% 0
+          background-size cover
+          position absolute
+
+//////////////////////////////////////// LEARN MORE
+
+.learnMore
+  width 100%
+  font-family 'Intro', Arial, sans-serif
+  text-align center
+  p
+    span 
+      color rojo
+.callMe
+    display flex
+    flex-direction column
+    align-items center
+
+.cellPhone
+      text-align center
+      box-shadow none
+      border 1px solid #777777
+      color #333333
+      font-family 'roboto'
+      font-weight 100
+.cellPhone::placeholder
+      text-align center
+      font-family 'roboto'
+      font-weight 100
+
+.submitBtn
+      background-color rojo
+      color #ffffff
+      border none
+      outline none
+      font-family 'roboto'
+      cursor pointer
+
+
+////////////////////////////////////////////// SLIDER
+
+.slider
+  width 100%
+  padding 40px 10px
+  background-color gris
+  .slider-container
+    .mySlide
+      display flex
+      position relative
+      width 100%
+      animation changeImage .3s ease
+      @keyframes changeImage 
+        0%
+          opacity 0
+        100%
+          opacity 1
+      p
+        font-family 'roboto'
+        font-weight 100
+        font-size 13px
+        line-height 17px
+    
+    .controls
+      display flex
+      position absolute
+      margin-left auto
+      margin-right auto
+      left 50%
+      bottom -20px
+      transform translate(-50%, -50%)
+      .controls-button
+        display block
+        margin-right 6px
+        width 8px
+        height 8px
+        background-color amarillo
+        border-radius 40%
+        cursor pointer
+      .controls-button-rojo
+        display block
+        margin-right 6px
+        width 8px
+        height 8px
+        background-color rojo
+        border-radius 40%
+        cursor pointer
+
+///////////////////////////////////////////// LIKED
+
+
+.liked
+  width 100%
+  font-family 'Intro'
+  text-align center
+  .callMe
+    display flex
+
+
+///////////////////////////////////////////////  MAP
+
+.map
+  width 100%
+  background-image url(../../src/images/map.jpg)
+  background-position center
+  background-size cover
+  box-shadow 0 2px 3px #888888
+  .map__shadow
+    width 100%
+    height 6px
+    -webkit-box-shadow: inset 0px 4px 7px -3px rgba(0,0,0,0.56);
+    -moz-box-shadow: inset 0px 4px 7px -3px rgba(0,0,0,0.56);
+    box-shadow: inset 0px 4px 7px -3px rgba(0,0,0,0.56);
+
+
+//////////////////////////////////////////////// RESIDENSE
+
+.residense
+  width 100%
+  font-family 'Intro', sans-serif
+  h2
+    position relative
+    &:before
+      content ''
+      display block
+      background-image url(../../src/images/icons/DNI.svg)
+      background-position 50% 0
+      background-size cover
+      position absolute
+    span
+      color rojo
+  h3
+    color rojo
+  .icons
+    display flex
+    justify-content space-between
+    font-family 'roboto'
+    font-weight 100
+  
+
+  .manual
+    width 100%
+    background-color #ffd100
+    font-family 'roboto', sans-serif
+    .manualWrapper
+      h3
+        position relative
+        color #000000
+        font-weight 100
+        &:before
+          content ''
+          display block
+          background-image url(../../src/images/book.png)
+          background-position 50% 0
+          background-size cover
+          position absolute
+      .callMe
+        position relative
+        display flex
+        .cellPhone
+          border none
+      .submitBtn
+        display block
+
+
+/////////////////////////////////////////////  FOOTER
+
+.footer
+  width 100%
+  background-color #3d3d3d
+  .footerWrapper
+    display flex
+    justify-content space-around
+    align-items center
+    .copyRight
+      font-family 'roboto', sans-serif
+      color #7a7a7a
+    .contactsWrapper
+      display flex
+      flex-direction column
+      font-family 'roboto', sans-serif
+      color #7a7a7a
+      text-align right
+
+      
